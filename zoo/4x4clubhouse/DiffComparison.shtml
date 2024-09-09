@@ -1,0 +1,575 @@
+<HTML>
+<HEAD>
+<TITLE>Locker Comparison</TITLE>
+<link rel="stylesheet" href="stylesheet.css" type="text/css">
+</HEAD>
+
+<h1>4x4 Clubhouse - Locker Comparison</h1>
+
+<TABLE border=0 width=700 bgcolor=#000000  cellpadding="10" cellspacing="0" align=center>
+  <TR>
+    <TD vAlign=top>
+      <CENTER>
+      <DIV align=center><FONT class=TimesRoman48 color=#ff0000 face=Arial 
+      size=6><B>Locker Comparisons</B></FONT></DIV>
+      <DIV align=center><FONT class=TimesRoman24 color=#000000 face=Arial 
+      size=4><B>Understanding Differentials/Lockers</B></FONT></DIV>
+      <DIV align=center><FONT class=TimesRoman24 color=#ff0033 face=Arial 
+      size=2><BR></FONT></DIV>
+      <DIV align=left><B><FONT class=TimesRoman24 color=#000000 face=Arial 
+      size=3>What's A Differential?</FONT></B></DIV>
+      <DIV align=left><FONT class=TimesRoman16 face=Arial size=2>When a vehicle 
+      is negotiating a corner, the outside wheel has to travel a grater distance 
+      than the inside wheel. Therefore, the outside wheel must turn faster than 
+      the inside wheel. The differential is the device within the axle assembly 
+      which, in addition to transmitting the power to each axle shaft/wheel, 
+      allows one wheel to turn at a different speed than the other.</FONT></DIV>
+      <DIV align=left>
+      <TABLE border=0 width="100%">
+        <TBODY>
+        <TR>
+          <TD width="100%">
+            <P align=center><IMG border=0 height=152 
+            src="pics/OpenvLocked.jpg" width=254></P></TD></TR>
+        <TR>
+          <TD width="100%"><FONT face=Arial size=2>A conventional open 
+            differential sends equal amounts of torque to both axleshafts (top). 
+            If one wheel spins because of lost traction, it is sustaining zero 
+            engine torque, so zero engine torque is also going to the wheel with 
+            traction. Adding a locking differential—in this case a NoSpin locker 
+            (bottom)—mechanically links the two shafts so that power will be 
+            delivered to both axles in all 
+      circumstances.</FONT></TD></TR></TBODY></TABLE></DIV>
+      <DIV align=left><FONT class=TimesRoman10 face=Arial 
+      size=2><BR></FONT></DIV>
+      <DIV align=left><B><FONT class=TimesRoman24 color=#000000 face=Arial 
+      size=3>What types of Differentials are there?</FONT></B></DIV>
+      <DIV align=left><FONT class=TimesRoman10 face=Arial 
+      size=2><BR></FONT></DIV>
+      <DIV align=left><FONT class=TimesRoman16 face=Arial size=2>Conventional or 
+      Open </FONT></DIV>
+      <DIV align=left><FONT class=TimesRoman16 face=Arial size=2>Limited Slip 
+      </FONT></DIV>
+      <DIV align=left><FONT class=TimesRoman16 face=Arial size=2>Automatic 
+      Locking </FONT></DIV>
+      <DIV align=left><FONT class=TimesRoman16 face=Arial size=2>Manual Locking 
+      </FONT></DIV>
+      <DIV align=left><FONT class=TimesRoman10 face=Arial 
+      size=2><BR></FONT></DIV>
+      <DIV align=left><B><FONT class=TimesRoman24 color=#000000 face=Arial 
+      size=3>Open Differentials:</FONT></B></DIV>
+      <DIV align=left><FONT class=TimesRoman16 face=Arial size=2>Use two side 
+      gears inside the differential case. Each gear is splined to accept an axle 
+      shaft. These side gears are in turn driven by a set of spider gears. The 
+      spider gears, also inside the differential case, ride on a shaft which is 
+      pinned into the differential case and through which all the power is 
+      transmitted. The case is driven by the ring gear which is bolted fast to 
+      the case. The conventional differential is fitted as standard equipment on 
+      most vehicles.</FONT></DIV>
+      <DIV align=left><FONT class=TimesRoman10 face=Arial 
+      size=2><BR></FONT></DIV>
+      <DIV align=left><FONT class=TimesRoman16 face=Arial size=2>On paved roads 
+      this system is very successful, giving predictable handling, even tire 
+      wear and requiring very little maintenance. However, in off road 
+      situations where traction surfaces vary greatly, this type of differential 
+      has a major limitation. When one wheel has greater traction than the 
+      other, all the power will be directed to the wheel with the least 
+      traction. For example, if one wheel is in the air and the other wheel is 
+      still on a hard surface, then all the power will be transferred to the 
+      wheel in the air. No power will go to the one on the ground and the 
+      vehicle will not move.</FONT></DIV>
+      <DIV align=left><FONT class=TimesRoman10 face=Arial 
+      size=2><BR></FONT></DIV>
+      <DIV align=left><B><FONT class=TimesRoman24 color=#000000 face=Arial 
+      size=3>Limited Slips:</FONT></B></DIV>
+      <DIV align=left><FONT class=TimesRoman16 face=Arial size=2>(LSD's) come in 
+      a variety of designs. Most use friction plates, cones and/or gears to 
+      reduce slippage between each of the tires. these units have a dual power 
+      path from the differential case to the axle shafts. some power is 
+      transmitted through the spider gears to the side gears in the conventional 
+      manner. The remainder is transmitted by friction between the differential 
+      case and the clutch plates and the side gears. A certain amount of "clutch 
+      preload" is built into the unit in a static condition. Then, as load is 
+      applied to the differential, the separation forces between the spider 
+      gears and the side gears increases this clutch loading. This increase in 
+      friction provides for a good positive power flow from the case directly to 
+      the side gears. When traction is available to both wheels, the power going 
+      to the differential causes the plates to bind tightly together, giving 
+      even power to both wheels. However, in a situation where there is little 
+      or no traction available to either one wheel or the other, the amount of 
+      power that can be transmitted to the other wheel which has traction is 
+      dependent on the friction or "preload" in the clutch plates. High levels 
+      of "clutch preload" will result in good torque transfer but some 
+      chattering of the clutches during cornering may occur. Lower levels of 
+      preload results in minimal chatter but reduced levels of torque transfer 
+      to the wheel with traction. Because LSD's restrict true differential 
+      action, tire wear is accelerated. Changes in vehicle handling may also 
+      occur, particularly in short wheelbase vehicles. Wear rates on limited 
+      slip differentials are generally higher than on other types due to the 
+      reliance on friction to reduce wheel slippage. Also, special lubricants 
+      may be required to minimize rough and noisy operation. Despite their 
+      limitations, LSD's are popular as original equipment options as well as an 
+      aftermarket replace because:</FONT></DIV>
+      <DIV align=left><FONT class=TimesRoman10 face=Arial 
+      size=2><BR></FONT></DIV>
+      <DIV align=left><FONT class=TimesRoman16 face=Arial size=2>1) Some 
+      traction improvement off road is provided </FONT></DIV>
+      <DIV align=left><FONT class=TimesRoman16 face=Arial size=2>2) Vehicle 
+      handling idiosyncrasies are not excessive </FONT></DIV>
+      <DIV align=left><FONT class=TimesRoman16 face=Arial size=2>3) Installation 
+      is simple </FONT></DIV>
+      <DIV align=left><FONT class=TimesRoman16 face=Arial size=2>4) Cost is 
+      reasonable </FONT></DIV>
+      <DIV align=left><FONT class=TimesRoman10 face=Arial 
+      size=2><BR></FONT></DIV>
+      <DIV align=left><B><FONT class=TimesRoman24 color=#000000 face=Arial 
+      size=3>Automatic Lockers:</FONT></B></DIV>
+      <DIV align=left><FONT class=TimesRoman16 face=Arial size=2>transmit power 
+      to each wheel through a pair of dog clutches. Differential action, such as 
+      when cornering is provided by automatically disengaging the appropriate 
+      clutch when one wheel rotates faster than the other. This results in 
+      differential action which occurs in ratcheting stages rather than being 
+      smooth and progressive. Power received by the differential is 
+      automatically directed to the wheel with greater traction. Therefore, if 
+      one wheel is lifted off the ground, the other wheel will receive the total 
+      power applied to the differential to maintain vehicle mobility. Traction 
+      is far superior to conventional and limited slip differentials. While 
+      automatic locking differential provide excellent performance off road, 
+      vehicle handling, particularly on highway, is sacrificed. Unlocking during 
+      cornering can be sudden, resulting in a rapid change of direction, 
+      particularly in short wheel based vehicles. During sharp cornering an 
+      audible ratcheting sound usually occurs as differential action takes place 
+      and a loud banging noise may be heard when the unit locks up 
+      again.</FONT></DIV>
+      <DIV align=left><FONT class=TimesRoman10 face=Arial 
+      size=2><BR></FONT></DIV>
+      <DIV align=left><FONT class=TimesRoman16 face=Arial size=2>Tire wear is 
+      usually increase. On 4WD vehicles, installation is normally considered for 
+      the rear axles only. Front axle installations can cause extreme 
+      difficulties in steering.</FONT></DIV>
+      <DIV align=left><FONT class=TimesRoman10 face=Arial 
+      size=2><BR></FONT></DIV>
+      <DIV align=left><B><FONT class=TimesRoman24 color=#000000 face=Arial 
+      size=3>Manually Controlled Lockers:</FONT></B></DIV>
+      <DIV align=left><FONT class=TimesRoman16 face=Arial size=2>use a 
+      conventional differential in conjunction with a mechanical locking device 
+      which can be operated at the driver's discretion. when locked, both axles 
+      will then turn at the same speed irrespective of the road surface. When it 
+      is unlocked, the differential functions as a conventional differential 
+      giving predictable handling, long service life and no increase in tire 
+      wear. It can be installed in both the front and rear axles without 
+      compromising on-road performance. Although manually lockable differentials 
+      are available in tractors and some military style vehicles, the 
+      installation in mass produced recreation type vehicles have been 
+      restricted by high cost and complexity of installation.</FONT></DIV>
+      <DIV align=left><FONT class=TimesRoman10 face=Arial 
+      size=2><BR></FONT></DIV>
+      <DIV align=left><FONT class=TimesRoman16 face=Arial size=2>The ARB Air 
+      Locker has allowed this situation to be reversed. This unique air operated 
+      unit incorporates its activating mechanism totally inside the differential 
+      center. This avoids the need to have complicated piston arrangements 
+      hanging off the axle housing. Locking action is controlled by the drive 
+      with a push button switch inside the cab. Installation involves a bolt in 
+      replacement of the original equipment differential center, a 12 volt air 
+      compressor with reservoir and an in-vehicle mounted switch. Original 
+      equipment axles, bearings, etc. are retained. Locking/Unlocking of the 
+      unit is extremely rapid approximately 0.1 seconds) and may be achieved at 
+      any vehicle speed. No special maintenance is required and servicing of 
+      other vehicle components is unaffected. Standard lubricants are used. The 
+      ARB Air Locker is the ultimate differential for almost any vehicle 
+      providing 100% drive to each wheel, without handling problems, or 
+      additional wear problems.</FONT></DIV>
+      <DIV align=left><FONT class=TimesRoman10 face=Arial 
+      size=2><BR></FONT></DIV>
+      <DIV align=left><B><FONT class=TimesRoman24 color=#000000 face=Arial 
+      size=3>Why Do Limited-Slip/Posi Differentials Fall Short?</FONT></B></DIV>
+      <DIV align=left><FONT class=TimesRoman16 face=Arial size=2>As the name 
+      implies, limited-slip/posi differentials limit or reduce wheel slippage, 
+      but do not eliminate it. By applying friction with clutches or cones to 
+      the side gears inside the differential, unwanted wheel slippage is 
+      reduced. The degree of reduced wheel slippage is determined by the amount 
+      of friction, or "breakaway torque," applied to the side gears. While 
+      performance varies from one design to another, as little as 15% to 25% of 
+      engine torque will be delivered to the higher traction wheel when new and 
+      will decline with use. Although better than open differentials, 
+      limited-slip/posi differentials do not provide the maximum traction 
+      capabilities of locking differentials.</FONT></DIV>
+      <DIV align=left><FONT class=TimesRoman10 face=Arial 
+      size=2><BR></FONT></DIV>
+      <DIV align=left><FONT class=TimesRoman24 color=#000000 face=Arial 
+      size=3><B>What Is A Locking Differential?</B></FONT></DIV>
+      <DIV align=left><FONT class=TimesRoman16 face=Arial size=2>Unlike 
+      limited-slip/posi differentials, locking differentials deliver 100% of 
+      engine torque to both wheels, even if one has zero traction. Locking 
+      differentials, commonly referred to as "lockers," are available in either 
+      manual or automatic configurations: Manual lockers operate like open 
+      differentials when deactivated. When manually activated, they deliver 
+      maximum traction by essentially joining together both wheels. Because 
+      manual lockers do not differentiate when activated, care must be used to 
+      insure they are manually disengaged when making turns on hard surfaces to 
+      avoid potential damage.</FONT></DIV>
+      <DIV align=left><FONT class=TimesRoman10 face=Arial 
+      size=2><BR></FONT></DIV>
+      <DIV align=left><FONT class=TimesRoman16 face=Arial size=2>Automatic 
+      lockers deliver maximum traction without requiring manual activation and 
+      deactivation. The wheels are mechanically "locked" together when the 
+      vehicle is traveling straight ahead. As the vehicle begins to turn, it 
+      automatically; unlocks to allow required wheel differentiation throughout 
+      the turn, and then automatically re-locks. Although not as smooth and as 
+      quiet as limited-slip/posi differentials, vehicles equipped with automatic 
+      locking differentials provide differentiation and the highest level of 
+      traction output.</FONT></DIV>
+      <DIV align=left><FONT class=TimesRoman16 face=Arial 
+      size=2><BR></FONT></DIV>
+      <DIV align=left><B><FONT class=TimesRoman24 color=#000000 face=Arial 
+      size=3>Two Types Of Lockers:</FONT></B></DIV>
+      <DIV align=left><FONT class=TimesRoman16 face=Arial size=2>There are 
+      essentially two types of lockers that can be installed in an axle.&nbsp; 
+      One that replaces the whole carrier and one that installs in the 
+      carrier.&nbsp; </FONT></DIV>
+      <DIV align=left><FONT class=TimesRoman10 face=Arial 
+      size=2><BR></FONT></DIV>
+      <DIV align=left><FONT class=TimesRoman16 face=Arial size=2>The Detroit 
+      Locker and ARB Air Locker are tow examples of lockers that replace the 
+      carrier.&nbsp; They require that the ring and pinion be removed and set 
+      back up.&nbsp; These lockers are not easy for the basic driveway mechanic 
+      and should be done by a reputable mechanic/shop. </FONT></DIV>
+      <DIV align=left><FONT class=TimesRoman16 face=Arial size=2>The Lock-Rite 
+      is a very popular locker and installs by replacing the side and spider 
+      gears.&nbsp; It installs in to the stock open carrier and can be set up by 
+      anyone with good mechanical skills.</FONT></DIV>
+      <DIV align=left><FONT class=TimesRoman10 face=Arial 
+      size=2><BR></FONT></DIV>
+      <DIV align=left><FONT class=TimesRoman16 face=Arial size=2>Of the two 
+      designs, the Lock-Rite is much cheaper than the Detroit Locker because 
+      your not replacing the whole carrier.&nbsp; It is also much easier to 
+      install.&nbsp; The Lock-Rite is idea for moderate trail use while the 
+      Detroit Locker should be used in extreme wheeling conditions.</FONT></DIV>
+      <DIV align=left><FONT class=TimesRoman10 face=Arial 
+      size=2><BR></FONT></DIV>
+      <DIV align=left><B><FONT class=TimesRoman24 color=#000000 face=Arial 
+      size=3>There Is One More Device Not Yet Discussed:</FONT></B></DIV>
+      <DIV align=left><FONT class=TimesRoman16 face=Arial size=2>Spools, like 
+      lockers, can be bought as either a replacement for the stock carrier or as 
+      a unit to install in to the stock carrier.&nbsp; Spools permanently lock 
+      the axleshafts together and should only be used in straight line drag 
+      racing or in loose dirt/mud.&nbsp; Spools should not be used on the street 
+      because they will not let the axleshafts turn at different speeds while 
+      going around corners.</FONT></DIV>
+      <DIV align=left>&nbsp;</DIV>
+      <DIV align=left><FONT class=TimesRoman16 face=Arial size=2><B>(Spool 
+      Update)</B></FONT></DIV>
+      <DIV align=left><FONT class=TimesRoman16 face=Arial size=2>Spools are 
+      starting to appear on trucks that are road driven.&nbsp; Although they 
+      don't let the tires spin at different speeds, they do eliminate erratic 
+      handling caused by a locker engaging and disengaging.</FONT></DIV>
+      <DIV align=left>&nbsp;</DIV>
+      <DIV align=left>
+      <P align=center><SPAN class=header1><B><FONT color=#9999ff face=Arial 
+      size=4>Traction Aids at a Glance</FONT></B></SPAN></P></DIV>
+      <DIV align=left>
+      <P align=center><SPAN class=size12><B><FONT color=#ff0000 face=Arial 
+      size=3>Here are some quick reviews of each traction 
+      product.</FONT></B></SPAN></P></DIV>
+      <DIV align=left>&nbsp;</DIV>
+      <DIV align=left><SPAN class=size12><B><FONT face=Arial size=3>ARB Air 
+      Locker</FONT></B></SPAN></DIV>
+      <DIV align=left>&nbsp;</DIV>
+      <DIV align=left><SPAN class=size12><FONT face=Arial size=2>Air-actuated 
+      on-demand locker; the best of both worlds since it can operate in 
+      fully-locked or fully-open modes; most expensive locker on the market. 
+      Works well on 44s, too.</FONT></SPAN></DIV>
+      <DIV align=left>&nbsp;</DIV>
+      <DIV align=left><SPAN class=size12><B><FONT face=Arial size=3>Auburn 
+      Cone</FONT></B></SPAN></DIV>
+      <DIV align=left>&nbsp;</DIV>
+      <DIV align=left><SPAN class=size12><FONT face=Arial size=2>Clutch-style 
+      limited slip that features coil-spring pre-load for constant resistance to 
+      differentiation; a good replacement for OE limited slips, or for use in 
+      vehicles that see bad roads or inclement weather.</FONT></SPAN></DIV>
+      <DIV align=left>&nbsp;</DIV>
+      <DIV align=left><SPAN class=size12><B><FONT face=Arial size=3>Dana 
+      Trac-Lok</FONT></B></SPAN></DIV>
+      <DIV align=left>&nbsp;</DIV>
+      <DIV align=left><SPAN class=size12><FONT face=Arial size=2>Standard 
+      flat-plate, clutch-type limited slip; mild, streetable; appropriate for 
+      front-axle applications; normal- to medium-size tires.</FONT></SPAN></DIV>
+      <DIV align=left>&nbsp;</DIV>
+      <DIV align=left><SPAN class=size12><B><FONT face=Arial size=3>Eaton 
+      Posi</FONT></B></SPAN></DIV>
+      <DIV align=left>&nbsp;</DIV>
+      <DIV align=left><SPAN class=size12><FONT face=Arial size=2>Nicknamed 
+      “super brute” by Moroso; limited slip built with carbon-fiber clutch 
+      plates and available in a number of spring pre-load pressures so 
+      differentiation resistance can be tailored to suit specific applications 
+      (including pre-loads so aggressive they’re for drag racing 
+      only).</FONT></SPAN></DIV>
+      <DIV align=left>&nbsp;</DIV>
+      <DIV align=left><SPAN class=size12><B><FONT face=Arial size=3>Powertrax 
+      Lock Right</FONT></B></SPAN></DIV>
+      <DIV align=left>&nbsp;</DIV>
+      <DIV align=left><SPAN class=size12><FONT face=Arial size=2>Inexpensive 
+      insertable locker; do-it-yourself install; a bit more harsh in 
+      disengagement than new Powertrax No-Slip.</FONT></SPAN></DIV>
+      <DIV align=left>&nbsp;</DIV>
+      <DIV align=left><SPAN class=size12><B><FONT face=Arial size=3>Powertrax 
+      No-Slip</FONT></B></SPAN></DIV>
+      <DIV align=left>&nbsp;</DIV>
+      <DIV align=left><SPAN class=size12><FONT face=Arial size=2>Insertable 
+      locker with smoother operation than Lock Right; d-i-y installable, though 
+      more expensive than Lock Right due to more sophisticated 
+      engineering.</FONT></SPAN></DIV>
+      <DIV align=left>&nbsp;</DIV>
+      <DIV align=left><SPAN class=size12><FONT face=Arial 
+      size=3><B>Powr-Lok</B></FONT></SPAN></DIV>
+      <DIV align=left>&nbsp;</DIV>
+      <DIV align=left><SPAN class=size12><FONT face=Arial size=2>Originally 
+      built by Dana and used in military Jeeps, now built by Precision Gear for 
+      Dana 44 and 60 axle applications; four-pinion design with pre-loaded 
+      clutches; cross-shafts have a ramp design that squeezes power on the 
+      clutches as engine torque is delivered.</FONT></SPAN></DIV>
+      <DIV align=left>&nbsp;</DIV>
+      <DIV align=left><SPAN class=size12><FONT face=Arial size=3><B>Power 
+      Brute</B></FONT></SPAN></DIV>
+      <DIV align=left>&nbsp;</DIV>
+      <DIV align=left><SPAN class=size12><FONT face=Arial size=2>Four-pinion, 
+      two-cross-shaft unit similar to the Powr-Lok and built for import 
+      applications.</FONT></SPAN></DIV>
+      <DIV align=left>&nbsp;</DIV>
+      <DIV align=left><SPAN class=size12><B><FONT face=Arial size=3>Tractech 
+      Detroit E-Z Locker</FONT></B></SPAN></DIV>
+      <DIV align=left>&nbsp;</DIV>
+      <DIV align=left><SPAN class=size12><FONT face=Arial size=2>An insertable 
+      locker; like the Powertrax Lock-Right in terms of function and 
+      installation ease.</FONT></SPAN></DIV>
+      <DIV align=left>&nbsp;</DIV>
+      <DIV align=left><SPAN class=size12><B><FONT face=Arial size=3>Tractech 
+      Detroit Gearless Locker</FONT></B></SPAN></DIV>
+      <DIV align=left>&nbsp;</DIV>
+      <DIV align=left><SPAN class=size12><FONT face=Arial size=2>The newest 
+      product from Tractech is an insertable locker that uses clutches, a 
+      steel-disc assembly and a side coupler splined to the axleshaft rather 
+      than internal gear teeth for locker operation; the most streetable full 
+      locker.</FONT></SPAN></DIV>
+      <DIV align=left>&nbsp;</DIV>
+      <DIV align=left><SPAN class=size12><B><FONT face=Arial size=3>Tractech 
+      Detroit Locker (also called NoSpin)</FONT></B></SPAN></DIV>
+      <DIV align=left>&nbsp;</DIV>
+      <DIV align=left><SPAN class=size12><FONT face=Arial 
+      size=2>Complete-carrier-assembly unit; senses driveline power and locks 
+      shafts together; physically the strongest unit on the market; appropriate 
+      for any application from recreation to competition.</FONT></SPAN></DIV>
+      <DIV align=left>&nbsp;</DIV>
+      <DIV align=left><SPAN class=size12><B><FONT face=Arial size=3>Tractech 
+      Detroit Truetrac</FONT></B></SPAN></DIV>
+      <DIV align=left>&nbsp;</DIV>
+      <DIV align=left><SPAN class=size12><FONT face=Arial size=2>All-gear, 
+      torque-sensing limited slip; appropriate for front-axle 
+      applications.</FONT></SPAN></DIV>
+      <DIV align=left>&nbsp;</DIV>
+      <DIV align=left><SPAN class=size12><B><FONT face=Arial size=3>Traction 
+      Loc</FONT></B></SPAN></DIV>
+      <DIV align=left>&nbsp;</DIV>
+      <DIV align=left><SPAN class=size12><FONT face=Arial size=2>Ford Motor 
+      Company’s version of the Dana Trac-Lok.</FONT></SPAN></DIV>
+      <DIV align=left>&nbsp;</DIV>
+      <DIV align=left><SPAN class=size12><FONT face=Arial size=2>Zexel Torsen 
+      All-gear, torque-sensing differential; similar to Truetrac but has beefier 
+      case, more aggressive teeth, and a higher torque bias so it reacts 
+      quicker.</FONT></SPAN></DIV>
+      <DIV align=left>&nbsp;</DIV>
+      <DIV align=left>
+      <P align=center><SPAN class=size12><B><FONT color=#9999ff face=Arial 
+      size=4>Tips From The Pros</FONT></B></SPAN></P></DIV>
+      <DIV align=left>
+      <P align=center><SPAN class=size12><B><FONT color=#ff0000 face=Arial 
+      size=3>&nbsp;Resource FOURWHEELER Magazine</FONT></B></SPAN></P></DIV>
+      <DIV align=left>&nbsp;</DIV>
+      <DIV align=left>
+      <TABLE border=0 cellPadding=0 cellSpacing=0>
+        <TBODY>
+        <TR>
+          <TD vAlign=top><!-- BEGIN CONTENT WELL --><!-- BEGIN CONTENT WELL -->
+            <TABLE border=0 cellPadding=0 cellSpacing=0>
+              <TBODY>
+              <TR>
+                <TD height=1 width=260><IMG alt="" border=0 height=1 
+                  src="LockerComparo_files/shim.gif" width=260></TD>
+                <TD height=1 width=5><IMG alt="" border=0 height=1 
+                  src="LockerComparo_files/shim.gif" width=5></TD>
+                <TD height=1 width=190><IMG alt="" border=0 height=1 
+                  src="LockerComparo_files/shim.gif" width=190></TD></TR>
+              <TR>
+                <TD vAlign=top>
+                  <TABLE border=0 cellPadding=0 cellSpacing=0>
+                    <TBODY>
+                    <TR>
+                      <TD vAlign=top width=260><SPAN class=size12>
+                        <P><FONT face=Arial size=2>“Avoid front-end locker 
+                        applications unless you’re rockcrawling. You’re just 
+                        gonna break parts.”</FONT></P>
+                        <P><FONT face=Arial size=2>—T.C., Reider 
+                        Racing</FONT></P>
+                        <P><FONT face=Arial size=2>“Running a locker in the 
+                        front axle is not an issue on the street as long as you 
+                        have hubs that unlock and the transfer case is 
+                        disengaged.”</FONT></P>
+                        <P><FONT face=Arial size=2>—Andy Gerrick, 
+                        Powertrax</FONT></P>
+                        <P><FONT face=Arial size=2>“Our average retail for a 
+                        Detroit Locker is $450 to $550. For an ARB it’s around 
+                        $650, plus $200 for the compressor. But you can save 
+                        money by running the wiring and air lines 
+                        yourself.”</FONT></P>
+                        <P><FONT face=Arial size=2>—Chris Corbett, Randy’s Ring 
+                        &amp; Pinion</FONT></P>
+                        <P><FONT face=Arial size=2>“Installation costs depend on 
+                        where you are in the country. Here in the Detroit area, 
+                        installation in the rear axle will run about $250, $350 
+                        for the front.”</FONT></P>
+                        <P><FONT face=Arial size=2>—T.C., Reider 
+                        Racing</FONT></P>
+                        <P><FONT face=Arial size=2>“Call around to see what your 
+                        local shops charge for installation. Here [in Washington 
+                        state] we charge anywhere from $250 to $300 per axle. 
+                        Some shops charge more for an ARB, since they have to 
+                        drill and tap the axle [for the air lines].”</FONT></P>
+                        <P><FONT face=Arial size=2>—Chris Corbett, Randy’s Ring 
+                        &amp; Pinion</FONT></P>
+                        <P><FONT face=Arial size=2>“If you’re a 10 percent 
+                        off-roader, a mechanical locker offers no more benefit 
+                        than a limited slip.”</FONT></P>
+                        <P><FONT face=Arial size=2>—Chris Corbett, Randy’s Ring 
+                        &amp; Pinion</FONT></P></SPAN></TD></TR>
+                    <TR>
+                      <TD vAlign=top width=260><FONT face=Arial 
+                        size=2>&nbsp;</FONT></TD></TR>
+                    <TR>
+                      <TD vAlign=top width=260><SPAN class=size12>
+                        <P><FONT face=Arial size=2>“I can’t imagine going 
+                        off-road without a locker. Limited slips are 
+                        useless.”</FONT></P>
+                        <P><FONT face=Arial size=2>—Andy Gerrick, 
+                        Powertrax</FONT></P>
+                        <P><FONT face=Arial size=2>“As long as both tires are on 
+                        the ground, a limited slip will go through most of the 
+                        same obstacles that a locker will take you 
+                        through.”</FONT></P>
+                        <P><FONT face=Arial size=2>—T.C., Reider 
+                        Racing</FONT></P>
+                        <P><FONT face=Arial size=2>“The cone-style posis are 
+                        popular, but they’re non-rebuildable. Once you’ve worn 
+                        one out, they’re basically a paperweight.”</FONT></P>
+                        <P><FONT face=Arial size=2>—Chris Corbett, Randy’s Ring 
+                        &amp; Pinion</FONT></P>
+                        <P><FONT face=Arial size=2>“Clutch [limited-slip] units 
+                        work best when they’re grabbing, so watch your throttle. 
+                        Too much power will overcome or burn out the clutches. 
+                        Let off the gas and let the clutches grab and do their 
+                        work.”</FONT></P>
+                        <P><FONT face=Arial size=2>—T.C., Reider 
+                        Racing</FONT></P>
+                        <P><FONT face=Arial size=2>“For most situations, OE 
+                        limited slips are OK, but today’s units aren’t as strong 
+                        as they were in the past. You know, back when a truck 
+                        was a truck, not a station wagon.”</FONT></P>
+                        <P><FONT face=Arial size=2>—T.C., Reider 
+                        Racing</FONT></P>
+                        <P><FONT face=Arial size=2>“If you’re running tall tires 
+                        check the locker’s warranty. Most companies drop their 
+                        warranty if you’re running over a 33-inch 
+                        tire.”</FONT></P>
+                        <P><FONT face=Arial size=2>—T.C., Reider 
+                        Racing</FONT></P>
+                        <P><FONT face=Arial size=2>“Any increase in the size of 
+                        a vehicle’s engine, tires, weight, etc., may prohibit 
+                        use of a NoSpin differential in a heretofore approved 
+                        application.”</FONT></P>
+                        <P><FONT face=Arial size=2>—NoSpin/Detroit Locker sales 
+                        brochure</FONT></P>
+                        <P><FONT face=Arial size=2>“If you’re running tires over 
+                        35 inches, make sure you’re buying a 
+                        full-carrier-replacement locker, especially in the 
+                        rear.”</FONT></P>
+                        <P><FONT face=Arial size=2>—Chris Corbett, Randy’s Ring 
+                        &amp; Pinion</FONT></P>
+                        <P><FONT face=Arial size=2>“The Lock Right, No-Slip, and 
+                        E-Z Locker are truly no-brainers to install. Others can 
+                        be do-it-yourself if you’re mechanically able. If you’re 
+                        up to rebuilding engines, you can install a 
+                        locker.”</FONT></P>
+                        <P><FONT face=Arial size=2>—Chris Corbett, Randy’s Ring 
+                        &amp; Pinion</FONT></P>
+                        <P><FONT face=Arial size=2>“Anything that requires 
+                        disassembly of the unit to get at the spider gears needs 
+                        professional assembly.”</FONT></P>
+                        <P><FONT face=Arial size=2>—T.C., Reider 
+                        Racing</FONT></P>
+                        <P><FONT face=Arial size=2>“I can’t imagine going 
+                        off-road without a locker. Limited slips are 
+                        useless.”</FONT></P>
+                        <P><FONT face=Arial size=2>—Andy Gerrick, 
+                        Powertrax</FONT></P>
+                        <P><FONT face=Arial size=2>“As long as both tires are on 
+                        the ground, a limited slip will go through most of the 
+                        same obstacles that a locker will take you 
+                        through.”</FONT></P>
+                        <P><FONT face=Arial size=2>—T.C., Reider 
+                        Racing</FONT></P>
+                        <P><FONT face=Arial size=2>“The cone-style posis are 
+                        popular, but they’re non-rebuildable. Once you’ve worn 
+                        one out, they’re basically a paperweight.”</FONT></P>
+                        <P><FONT face=Arial size=2>—Chris Corbett, Randy’s Ring 
+                        &amp; Pinion</FONT></P></SPAN></TD></TR>
+                    <TR>
+                      <TD vAlign=top width=260>&nbsp;</TD></TR>
+                    <TR>
+                      <TD vAlign=top width=260><SPAN class=size12>
+                        <P>“<FONT face=Arial size=2>Clutch [limited-slip] units 
+                        work best when they’re grabbing, so watch your throttle. 
+                        Too much power will overcome or burn out the clutches. 
+                        Let off the gas and let the clutches grab and do their 
+                        work.”</FONT></P>
+                        <P><FONT face=Arial size=2>—T.C., Reider 
+                        Racing</FONT></P>
+                        <P><FONT face=Arial size=2>“For most situations, OE 
+                        limited slips are OK, but today’s units aren’t as strong 
+                        as they were in the past. You know, back when a truck 
+                        was a truck, not a station wagon.”</FONT></P>
+                        <P><FONT face=Arial size=2>—T.C., Reider 
+                        Racing</FONT></P>
+                        <P><FONT face=Arial size=2>“If you’re running tall tires 
+                        check the locker’s warranty. Most companies drop their 
+                        warranty if you’re running over a 33-inch 
+                        tire.”</FONT></P>
+                        <P><FONT face=Arial size=2>—T.C., Reider 
+                        Racing</FONT></P>
+                        <P><FONT face=Arial size=2>“Any increase in the size of 
+                        a vehicle’s engine, tires, weight, etc., may prohibit 
+                        use of a NoSpin differential in a heretofore approved 
+                        application.”</FONT></P>
+                        <P><FONT face=Arial size=2>—NoSpin/Detroit Locker sales 
+                        brochure</FONT></P>
+                        <P><FONT face=Arial size=2>“If you’re running tires over 
+                        35 inches, make sure you’re buying a 
+                        full-carrier-replacement locker, especially in the 
+                        rear.”</FONT></P>
+                        <P><FONT face=Arial size=2>—Chris Corbett, Randy’s Ring 
+                        &amp; Pinion</FONT></P>
+                        <P><FONT face=Arial size=2>“The Lock Right, No-Slip, and 
+                        E-Z Locker are truly no-brainers to install. Others can 
+                        be do-it-yourself if you’re mechanically able. If you’re 
+                        up to rebuilding engines, you can install a 
+                        locker.”</FONT></P>
+                        <P><FONT face=Arial size=2>—Chris Corbett, Randy’s Ring 
+                        &amp; Pinion</FONT></P>
+                        <P><FONT face=Arial size=2>“Anything that requires 
+                        disassembly of the unit to get at the spider gears needs 
+                        professional assembly.”</FONT></P>
+                        <P><FONT face=Arial size=2>—T.C., Reider 
+                        Racing</FONT></P></SPAN></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></DIV>
+</TD></TR></TBODY></TABLE></DIV>
+
+</td></tr></table>
+
+</BODY></HTML>
