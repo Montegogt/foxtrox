@@ -1,0 +1,25 @@
+# This file is created by JAlbum. It sets custom file filtering and ordering for this image directory.
+# Files not listed here are added to the end of the album
+# Rows beginning with "-" indicate excluded files.
+# Rows can have up to 3 tab separated columns according to this scheme:
+# File name | Target path (for links) | When added (seconds since epoch)
+# Note: The target path can reference files and directories in other locations and thereby
+# allows you to compile albums consisting of files from several different locations.
+
+exp5-5in.jpg		1393486105
+exp4-5in.jpg		1393486105
+exp6-5in.jpg		1393486105
+auto-019.jpg		1393486105
+auto-015.jpg		1393486105
+auto-014.jpg		1393486105
+auto-017.jpg		1393486105
+auto-016.jpg		1393486105
+may002.JPG		1393486105
+may074.JPG		1393486105
+may073.JPG		1393486105
+may075.JPG		1393486105
+may042.JPG		1393486105
+may011.JPG		1393486105
+may003.JPG		1393486105
+may029.JPG		1393486105
+may028.JPG		1393486105
