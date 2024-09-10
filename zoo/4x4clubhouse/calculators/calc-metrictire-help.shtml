@@ -1,0 +1,31 @@
+<html><head>
+	<TITLE>Metric Tire Calculator</TITLE>
+<link rel="stylesheet" href="../stylesheet.css" type="text/css">
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" text="#000000" link="#ff0000" vlink="#ff0000">
+<center>
+<table cellspacing="0" cellpadding="4" border="2">
+<tr><td colspan="3" align="CENTER">These calculators are color coded by function</td></tr>
+<tr>
+	
+	<td bgcolor="#0000ff"><font color="#ffffff">All Blanks Required</td>
+	<td bgcolor="#ff00ff"><font color="#ffffff">Output Only</td>
+</tr>
+</table>
+
+<font size="+1"><b>METRIC TIRE TO DIAMETER (INCHES) CALCULATOR</b></font><p>
+<b>This calc converts a Metric tire to inches.</b><p> 
+</center>
+Most of the formulas dealing with gear ratios will want a tire diameter (measured in inches).  This formula is a quick way to get the tire diameter of those metric tires that are common on just about everything stock. For example a LT265/75R16 would be around 31.6 inches tall and 10 inches wide. Enter any three of the numbers into this form to solve for the fourth.  "LT" means Light Truck and "P" means Passenger tire. The bigger number (on the left) is the Section Width. The number to the right of the slash ("/") is the Aspect Ratio (percent of width).  The "R" means Radial tire and the last number, far right, is the rim diameter (in inches!).
+<p>
+<center>
+<b>Formula used</b><p>
+<img src="calc-gearmetric-formula.gif" width=450 height=42 border=0><P>
+Width in inches = section width / 25.4<p>
+Section Height in inches = Width in inches X Aspect Ratio (%)<p>
+
+</center>
+
+</body>
+</html>

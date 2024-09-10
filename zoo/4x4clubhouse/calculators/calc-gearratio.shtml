@@ -1,0 +1,128 @@
+<html><head>
+<TITLE>Tire/Gear Calculator</TITLE>
+<link rel="stylesheet" href="../stylesheet.css" type="text/css">
+
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+/**/
+
+function gearcalc(form)
+{
+if (form.otd.value<1||form.otd.value>100)
+{       form.otd.value="";}
+if (form.mph.value<1||form.mph.value>999)
+{       form.mph.value="";}     
+if (form.rpm.value<1||form.rpm.value>99999)
+{       form.rpm.value="";}
+if (form.ogr.value<1||form.ogr.value>99)
+{       form.ogr.value="";}
+if (form.trn.value<.01||form.trn.value>99)
+{       form.trn.value="";}
+if (form.trc.value<1||form.trc.value>99)
+{       form.trc.value="";}
+if (form.crr.value<1||form.crr.value>99)
+{       form.crr.value="";}
+
+
+if (form.compute.value == "Calculate")	
+    {
+	if (form.ogr.value>""&&form.trn.value>""&&form.trc.value>"")
+	    {
+		    form.crr.value = Math.round((form.ogr.value * form.trn.value * form.trc.value)*100)/100;
+	    }
+	if (form.rpm.value==""&&form.mph.value>""&&form.ogr.value>""&&form.trn.value>""&&form.trc.value>""&&form.otd.value>"")
+	    {
+		    form.rpm.value = Math.round(((form.mph.value * form.ogr.value * form.trn.value * form.trc.value * 336)/form.otd.value)*10)/10;
+	    }
+	if (form.mph.value==""&&form.rpm.value>""&&form.ogr.value>""&&form.trn.value>""&&form.trc.value>""&&form.otd.value>"")
+	    {
+		    form.mph.value = Math.round(((form.rpm.value * form.otd.value) / (form.ogr.value * form.trn.value * form.trc.value * 336))*10)/10;
+	    }
+	if (form.ogr.value==""&&form.rpm.value>""&&form.mph.value>""&&form.trn.value>""&&form.trc.value>""&&form.otd.value>"")
+	    {
+		    form.ogr.value = Math.round(((form.rpm.value * form.otd.value) / (form.mph.value * form.trn.value * form.trc.value * 336))*100)/100;
+	    }
+	if (form.trn.value==""&&form.rpm.value>""&&form.mph.value>""&&form.ogr.value>""&&form.trc.value>""&&form.otd.value>"")
+	    {
+		    form.trn.value = Math.round(((form.rpm.value * form.otd.value) / (form.mph.value * form.ogr.value * form.trc.value * 336))*100)/100;
+	    }
+	if (form.trc.value==""&&form.rpm.value>""&&form.mph.value>""&&form.ogr.value>""&&form.trn.value>""&&form.otd.value>"")
+	    {
+		    form.trc.value = Math.round(((form.rpm.value * form.otd.value) / (form.mph.value * form.ogr.value * form.trn.value * 336))*100)/100;
+	    }
+	if (form.otd.value==""&&form.mph.value>""&&form.ogr.value>""&&form.trn.value>""&&form.trc.value>""&&form.rpm.value>"")
+	    {
+		    form.otd.value = Math.round(((form.mph.value * form.ogr.value * form.trn.value * form.trc.value * 336)/form.rpm.value)*10)/10;
+	    }
+	}
+}
+
+function clear(form)
+{
+if (form.otd.value>"") form.otd.value = "";
+if (form.mph.value>"") form.mph.value = "";
+if (form.rpm.value>"") form.rpm.value = "";
+if (form.ogr.value>"") form.ogr.value = "";
+if (form.trn.value>"") form.trn.value = "";
+if (form.trc.value>"") form.trc.value = "";
+if (form.crr.value>"") form.crr.value = "";
+}
+<!-- done hiding from old browsers -->
+</SCRIPT>
+
+</HEAD>
+
+<h1>4x4 Clubhouse - Tire/Gear Calculator</h1>
+
+<P align=center><FONT face=Arial><FONT color=#ff0000 size=5><B>Tire/Gear Calculator</B></FONT><BR><BR>
+
+
+
+<P>
+<CENTER><FONT SIZE="+3">Gear Ratio</FONT>
+
+<CENTER><FORM>
+
+<TABLE border=3 CELLSPACING=0 CELLPADDING=0 WIDTH=460>
+<TR><TD ALIGN=LEFT COLSPAN=2 BGCOLOR="#000000">
+<FONT SIZE=2>  <strong>Gear Ratio</strong> also solve for MPH or RPM </FONT>
+</TD>
+</TR>
+<TR>
+<TD>
+	<table width="100%" cellpadding="0" cellspacing="0">
+	<td align="CENTER" bgcolor="#0000ff">
+	<table cellspacing="0" cellpadding="0">
+<tr>
+	<td align="RIGHT"><b><font size="2">Tire Diameter:</font></b> <INPUT TYPE=TEXT NAME=otd SIZE=5> </td>
+	<td align="RIGHT"><b><font size="2"><a href="#" onclick=window.open("transm_table.html","help","toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=240,height=450")>Tranny Ratio</a>:</font></b> <INPUT TYPE=TEXT NAME=trn SIZE=5></td>
+</tr>
+<tr>
+	<td align="RIGHT"><b><font size="2">Diff Ratio:</font></b> <INPUT TYPE=TEXT NAME=ogr SIZE=5> </td>
+	<td align="RIGHT"><b><font size="2"><a href="#" onclick=window.open("transf_table.html","help","toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=240,height=450")>TransferCase Ratio</a>:</font></b> <INPUT TYPE=TEXT NAME=trc SIZE=5></td>
+</tr>
+<tr>
+	<td align="RIGHT"><b><font size="2">RPM:</font></b> <INPUT TYPE=TEXT NAME=rpm SIZE=5> </td>
+	<td align="RIGHT"><b><font size="2">MPH:</font></b> <INPUT TYPE=TEXT NAME=mph SIZE=5></td>
+</tr>
+</table>
+	
+	</td>
+	<td align="CENTER" bgcolor="#ff00ff">
+	  Crawl<br>  <INPUT TYPE=TEXT NAME=crr SIZE=4><br>  Ratio 
+	</td>
+	</table>
+</TD>
+</TR>
+</TABLE>
+<INPUT TYPE="button" VALUE="Calculate" name="compute" OnClick="gearcalc(this.form)">
+<INPUT TYPE="reset"  VALUE="Reset" OnClick="clear(this.form)">
+<INPUT TYPE="button" VALUE=" ? " name="help" onclick=window.open("calc-gearratio-help.html","Help","toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,resizable=yes,width=450,height=500")>
+</FORM></CENTER>
+<P>
+
+
+
+</td></tr></table>
+
+</BODY></HTML>

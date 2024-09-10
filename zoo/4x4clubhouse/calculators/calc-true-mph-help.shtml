@@ -1,0 +1,35 @@
+<html>
+<head>
+<TITLE>True MPH Calculator</TITLE>
+<link rel="stylesheet" href="../stylesheet.css" type="text/css">
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" text="#000000" link="#ff0000" vlink="#ff0000">
+<center>
+<table cellspacing="0" cellpadding="4" border="2">
+<tr><td colspan="3" align="CENTER">These calculators are color coded by function</td></tr>
+<tr>
+	<td bgcolor="#0000ff"><font color="#ffffff">All Blanks Required</td>
+	<td bgcolor="#ff00ff"><font color="#ffffff">Output Only</td>
+</tr>
+</table>
+
+<font size="+1"><b>ACTUAL SPEED CALCULATOR</b></font><p>
+<b>Speedometer ratio adjustment calculator.</b><p> 
+</center>
+Ever wonder how far off your speedometer is with your new bigger tires? I'm using a simple ratio calculation, so this info will only approximate your corrected speed and depends on the accuracy of tire size diameters (assumimg nothing but tire size has changed). If you know specific information about your vehicle (gear ratios, RPM, etc.) then use the Gear Ratio calculator, it's probably a little more accurate.
+<p>
+<center>
+<b>Formula used</b><p>
+
+<font size="2">(New Tire Diameter / Old Tire Diameter) * Speedometer MPH = Actual MPH</font>
+
+</center>
+
+
+
+
+<center>
+
+</body>
+</html>

@@ -1,0 +1,98 @@
+<html>
+<head>
+<TITLE>Calculate True MPH</TITLE>
+<link rel="stylesheet" href="../stylesheet.css" type="text/css">
+
+<SCRIPT LANGUAGE="JavaScript">
+
+<!--
+/*
+
+        
+*/
+
+function gearcalc(form)
+{
+if (form.otd.value<1||form.otd.value>100)
+{       form.otd.value="";}
+if (form.ntd.value<1||form.ntd.value>100)
+{       form.ntd.value="";}
+if (form.osp.value<1||form.osp.value>199)
+{       form.osp.value="";}
+if (form.nsp.value<1||form.nsp.value>199)
+{       form.nsp.value="";}
+
+if (form.compute.value == "Calculator")
+    {
+        if (form.nsp.value==""&&form.ntd.value>""&&form.otd.value>""&&form.osp.value>"")
+            {
+                   form.nsp.value = Math.round(((form.ntd.value/form.otd.value)*form.osp.value)*10)/10;
+               return;
+                }
+        if (form.osp.value==""&&form.ntd.value>""&&form.otd.value>""&&form.nsp.value>"")
+            {
+                   form.osp.value = Math.round(((form.otd.value/form.ntd.value)*form.nsp.value)*10)/10;
+               return;
+                }
+        if (form.ntd.value==""&&form.osp.value>""&&form.otd.value>""&&form.nsp.value>"")
+            {
+                   form.ntd.value = Math.round(((form.nsp.value/form.osp.value)*form.otd.value)*10)/10;
+               return;
+                }
+        if (form.otd.value==""&&form.osp.value>""&&form.ntd.value>""&&form.nsp.value>"")
+            {
+                   form.otd.value = Math.round(((form.osp.value/form.nsp.value)*form.ntd.value)*10)/10;
+               return;
+                }
+    }
+}
+
+function clear(form)
+{
+if (form.otd.value>"") form.otd.value = "";
+if (form.ntd.value>"") form.ntd.value = "";
+if (form.osp.value>"") form.osp.value = "";
+if (form.nsp.value>"") form.nsp.value = "";
+}
+
+<!-- done hiding from old browsers -->
+
+</SCRIPT>
+</HEAD>
+
+<h1>4x4 Clubhouse - Calculate True MPH</h1>
+
+<P align=center><FONT face=Arial><FONT color=#ff0000 size=5><B>Calculate True MPH</B></FONT><BR><BR>
+
+<CENTER><FORM>
+<TABLE border=3 CELLSPACING=0 CELLPADDING=0 WIDTH=460>
+<TR>
+<TD ALIGN=LEFT COLSPAN=2 BGCOLOR="#000000">
+<FONT SIZE=2>  <strong>Speedometer Check</strong> (in MPH)</FONT>
+</TD>
+</TR>
+<TR>
+<TD ALIGN="RIGHT" BGCOLOR="#0000FF">
+        <table width="100%" cellspacing="0" cellpadding="0" bgcolor="#0000FF"><tr><td width="35%" align="RIGHT">
+        <b><font size="2">Orig Tire Dia.</font></b> <INPUT TYPE=TEXT NAME=otd SIZE=3><br>
+        <b><font size="2">New Tire Dia.</font></b> <INPUT TYPE=TEXT NAME=ntd SIZE=3>
+        </td>
+        <td>  <b><font size="2">Speedometer:</font></b> <INPUT TYPE=TEXT NAME=osp SIZE=3>
+        </td>
+        <td bgcolor="#ff00ff"><b><font size="2">Actual:</font></b> <INPUT TYPE=TEXT NAME=nsp SIZE=4>
+        </td></tr>
+        </table>
+</TD>
+</TR>
+</TABLE>
+<INPUT TYPE="button" VALUE="Calculator" name="compute" OnClick="gearcalc(this.form)">
+<INPUT TYPE="reset" VALUE="Reset" OnClick="clear(this.form)">
+<INPUT TYPE="button" VALUE=" ? " name="help" onclick=window.open("calc-true-mph-help.html","Help","toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,resizable=yes,width=450,height=450")>
+</FORM></CENTER>
+
+
+
+
+</td></tr></table>
+
+</BODY></HTML>

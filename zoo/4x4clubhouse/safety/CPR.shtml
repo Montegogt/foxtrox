@@ -1,0 +1,145 @@
+<HTML><HEAD><TITLE>First Aid Online</TITLE>
+<link rel="stylesheet" href="../stylesheet.css" type="text/css">
+</HEAD>
+
+<h1>4x4 Clubhouse - First Aid</h1>
+
+
+
+<TABLE border=0 width=700 bgcolor=#000000  cellpadding="10" cellspacing="0" align=center>
+  <TR>
+    <TD vAlign=top>
+      <CENTER> 
+      <P><I><FONT color=#ff0000 face=Impact size=7>First Aid Online</FONT></I></CENTER>
+<CENTER>
+<A href="firsta1.shtml">[ Introduction ]</A>- 
+<A href="firsta1a.shtml"> [ CPR ]</A>- 
+<A href="firsta2.shtml">[ Wounds ]</A>- 
+<A href="firsta3.shtml">[ Fractures ]</A>- 
+<A href="firsta4.shtml">[ Burns ]</A>- 
+<A href="firsta5.shtml">[ Poisoning ]</A>- 
+<A href="firsta6.shtml">[ Rescue ]</A>
+</CENTER>
+
+<BR>
+<h1>~ CPR Basics ~</h1>
+<BR>
+
+
+
+<!-- ********** DIV expand content script ********** -->
+<script type="text/javascript">
+<!--
+function toggleMe(a){
+  var e=document.getElementById(a);
+  if(!e)return true;
+  if(e.style.display=="none"){
+    e.style.display="block"
+  } else {
+    e.style.display="none"
+  }
+  return true;
+}
+//-->
+</script>
+<!-- ********** DIV expand content script ********** -->
+
+
+
+<TABLE border=0>
+  <TR>
+    <TD colSpan=2>
+
+<center><B><FONT size=4>CPR IN THREE SIMPLE STEPS</FONT> <BR>
+<SMALL>(Please try to attend a CPR training course)</SMALL></B></FONT>
+<br>
+<br>
+
+</TD></TR><TR><TD align=right vAlign=top width=392>
+
+<FONT face="arial, helvetica"><B><FONT size=6>1. CALL</FONT> <BR><BR>Check the victim for 
+<A href="javascript: void(0);"  type="button" class="button" onclick="return toggleMe('para1')">unresponsiveness</A>
+<div id="para1" style="display:none">
+<font size=2 color=ffff88>During cardiac arrest, the heart stops pumping blood, the blood pressure falls to zero and the pulse disappears. Within 10 seconds of cardiac arrest the person loses consciousness and becomes unresponsive. If you shake or shout at the victim, there will be no response. <br>
+Sometimes a person in cardiac arrest may make grunting, gasping or snoring type breathing sounds for a couple of minutes. Do not be confused by this abnormal type of breathing. <br>
+If a person is unresponsive (doesn't respond to shouts or shakes) and not breathing (or breathing abnormally) then call 911 and begin CPR. 
+</font>
+<br>
+</div>. If there is no response, Call 911 and return to the victim. In most locations the emergency dispatcher can assist you with CPR instructions.</B></FONT>
+</TD><TD vAlign=top width=259>
+&nbsp; <IMG height=132 src="image/quick1.gif" width=134>
+
+</TD></TR><TR><TD align=right vAlign=top width=392>
+
+<FONT 
+      face="arial, helvetica"><B><FONT size=6>2. BLOW</FONT> <BR><BR>Tilt the 
+      head back and listen for 
+<A href="javascript: void(0);"  type="button" class="button" onclick="return toggleMe('para2')">breathing</A>
+<div id="para2" style="display:none">
+<font size=2 color=ffff88>Remember a person in cardiac arrest may have abnormal breathing for a couple of minutes. This abnormal breathing is called "agonal respiration" and is the result of the brain's breathing center sending out signals even though circulation has ceased. The key point is that the abnormal breathing may sound like grunting, gasping or snoring. It disappears in 2-3 minutes. If you see this type of breathing DO NOT delay CPR. The person desperately needs air and only you can provide it.</font>
+</div>
+      If not breathing normally, pinch nose and cover the mouth with yours and 
+      blow until you see the chest rise. Give 2 breaths.&nbsp; Each breath 
+      should take 2 seconds.</B></FONT></TD>
+    <TD width=259>&nbsp; <IMG height=133 src="image/blowani.gif" 
+    width=134></TD></TR>
+  <TR>
+    <TD align=right vAlign=top width=392><FONT 
+      face="arial, helvetica"><B><FONT size=6>3. PUMP</FONT> <BR><BR>If the 
+      victim is still not breathing normally, coughing or moving, begin chest 
+      compressions.&nbsp; 
+
+<A href="javascript: void(0);"  type="button" class="button" onclick="return toggleMe('para3')">Push</A>
+<div id="para3" style="display:none">
+<font size=2 color=ffff88>In general the chest should be pushed down 11/2-2 inches. Sometimes you may hear a cracking sound. Do not be alarmed. The sound is caused by cartilage or ribs cracking. Even if this occurs the damage is not serious. The risk of delaying CPR or not doing CPR is far greater than the risk of a broken rib. </font>
+<br>
+</div>
+down on 
+      the chest 1-1/2 to 2 inches 15 times right between the nipples.&nbsp; Pump 
+      at the rate of 100/minute, faster than once per second.</B></FONT></TD>
+    <TD width=259><IMG alt="handposition.gif (3169 bytes)" height=137 
+      src="image/handposition.gif" width=137><BR>&nbsp; <IMG height=132 
+      src="image/pumpani.gif" width=131> </TD></TR>
+  <TR>
+    <TD colSpan=2 width=657>
+      <P align=center><FONT face="arial, helvetica" size=2><B>CONTINUE WITH 2 
+      BREATHS AND 15 PUMPS UNTIL HELP ARRIVES <BR>NOTE: This ratio is the same 
+      for one-person &amp; two-person CPR.&nbsp; In two-person CPR the person 
+      pumping the chest stops while the other gives mouth-to-mouth 
+      breathing.</B></FONT></P>
+
+<center>
+
+<A href="javascript: void(0);"  type="button" class="button" onclick="return toggleMe('para4')">What complications can occur?</A>
+<div id="para4" style="display:none">
+<font size=2 color=ffff88>Vomiting is the most frequently encountered complication of CPR. If the victim starts to vomit, turn the head to the side and try to sweep out or wipe off the vomit. Continue with CPR.<br><br>
+The spread of infection from the victim to the rescuer is exceedingly rare. Most cardiac arrests occur in people's homes - relatives or friends will be the ones needing to do CPR. Even CPR performed on strangers has an exceedingly rare risk of infection. There is NO documentation of HIV or AIDS ever being transmitted via CPR. 
+</font>
+<br>
+</div>
+
+<br><br>
+
+<A href="javascript: void(0);"  type="button" class="button" onclick="return toggleMe('para4')">What about checking for a pulse?</A>
+<div id="para4" style="display:none">
+<font size=2 color=ffff88>The pulse check is no longer taught or expected of laypersons.   Instead, if you see no signs of life (defined as breathing normally, coughing or moving) you should begin to pump on the chest.  Please note that the pulse check is still expected of health case providers. 
+</font>
+<br>
+</div>
+
+
+
+      <P align=center><FONT face="arial, helvetica" size=2><B>DO YOU WANT TO 
+      TAKE THESE INSTRUCTIONS WITH YOU?<BR><A 
+      href="image/CPRPocketGuide.jpg" target=CPR>CLICK 
+      HERE FOR A PRINTABLE CPR POCKET 
+GUIDE</A></B></FONT></P>
+
+</TD></TR></TABLE></CENTER></DIV>
+
+
+<br><center><a href="#top">[ Top of Page ]</a><center><br>
+
+</td></tr></table>
+
+</BODY></HTML>

@@ -1,0 +1,29 @@
+<html>
+<head>
+<TITLE>Ring / Pinion Calculator</TITLE>
+<link rel="stylesheet" href="../stylesheet.css" type="text/css">
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" text="#000000" link="#ff0000" vlink="#ff0000">
+<center>
+<table cellspacing="0" cellpadding="4" border="2">
+<tr><td colspan="3" align="CENTER">These calculators are color coded by function</td></tr>
+<tr>
+	<td bgcolor="#0000ff"><font color="#ffffff">All Blanks Required</td>
+	<td bgcolor="#ff00ff"><font color="#ffffff">Output Only</td>
+</tr>
+</table>
+
+<font size="+1"><b>RING/PINION CALCULATOR</b></font><p>
+<b>A simple gear ratio calculator.</b><p> 
+</center>
+Okay, so you've torn your pumpkin apart and have the ring gear and pinion gear teeth count. This calculator will give you the gear ratio, just plug in the numbers. There are many ways to guestimate what your gear ratio is.  Another popular method is to mark your tire and driveshaft, then carefully roll the vehicle so the tire turns one full revolution.  While you do this, count the number of turns (down to the tenth) of the drive shaft.  This will get you a close idea of your gear ratio.<p>
+<center>
+<b>Formula used</b><p>
+
+Ring Gear Teeth Count / Pinion Gear Teeth = Gear Ratio
+
+</center>
+
+</body>
+</html>

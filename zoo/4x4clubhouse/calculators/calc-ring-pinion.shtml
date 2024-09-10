@@ -1,0 +1,86 @@
+<html>
+<head>
+<TITLE>Ring / Pinion</TITLE>
+<link rel="stylesheet" href="../stylesheet.css" type="text/css">
+	
+	<SCRIPT LANGUAGE="JavaScript">
+
+<!--
+/*
+        
+*/
+
+function gearcalc(form)
+{
+if (form.ngr.value<1||form.ngr.value>99)
+{       form.ngr.value="";}
+if (form.rgc.value<1||form.rgc.value>99)
+{       form.rgc.value="";}
+if (form.pgc.value<1||form.pgc.value>99)
+{       form.pgc.value="";}
+
+if (form.compute.value == "Calculator")
+    {
+        if (form.ngr.value==""&&form.rgc.value>""&&form.pgc.value>"")
+            {
+                   form.ngr.value = Math.round((form.rgc.value/form.pgc.value)*100)/100;
+           return;
+                }
+        if (form.pgc.value==""&&form.rgc.value>""&&form.ngr.value>"")
+            {
+                   form.pgc.value = Math.round((form.rgc.value/form.ngr.value)*100)/100;
+           return;
+                }
+        if (form.rgc.value==""&&form.pgc.value>""&&form.ngr.value>"")
+            {
+                   form.rgc.value = Math.round((form.pgc.value*form.ngr.value)*100)/100;
+           return;
+                }
+    }
+}
+
+function clear(form)
+{
+if (form.ngr.value>"") form.ngr.value = "";
+if (form.rgc.value>"") form.rgc.value = "";
+if (form.pgc.value>"") form.pgc.value = "";
+}
+
+<!-- done hiding from old browsers -->
+
+</SCRIPT>
+</HEAD>
+
+<h1>4x4 Clubhouse - Calculate Ring / Pinion</h1>
+
+<P align=center><FONT face=Arial><FONT color=#ff0000 size=5><B>Ring / Pinion</B></FONT><BR><BR>
+
+
+
+
+<CENTER><FORM>
+<table width="460" border="3" cellspacing="0" cellpadding="0" nowrap>
+<TR>
+<TD ALIGN=LEFT BGCOLOR="#000000">
+<FONT SIZE=2>  <strong>Ring and Pinion</strong> simple calculator, use teeth count</FONT>
+</TD>
+</TR>
+<TR>
+<td align="CENTER" bgcolor="#0000FF"><br>
+<b><font size="2"># Ring Gear:</font></b> <INPUT TYPE=TEXT NAME=rgc SIZE=4>  
+<b><font size="2"># Pinion Gear:</font></b> <INPUT TYPE=TEXT NAME=pgc SIZE=4> <FONT SIZE="3"><b>=</b></FONT>
+<BR></TD>
+<TD align="CENTER" bgcolor="#FF00FF"><BR> 
+<b><font size="2">Gear Ratio:</font></b> <INPUT TYPE=TEXT NAME=ngr SIZE=4><br>
+</TD>
+</TR>
+</TABLE>
+<INPUT TYPE="button" VALUE="Calculator" name="compute" OnClick="gearcalc(this.form)">
+<INPUT TYPE="reset"  VALUE="Reset" OnClick="clear(this.form)">
+<INPUT TYPE="button" VALUE=" ? " name="help" onclick=window.open("calc-ring-pinion-help.html","Help","toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,resizable=yes,width=450,height=450")>
+</FORM></CENTER>
+
+
+</td></tr></table>
+
+</BODY></HTML>
