@@ -1,0 +1,25 @@
+# This file is created by JAlbum. It sets custom file filtering and ordering for this image directory.
+# Files not listed here are added to the end of the album
+# Rows beginning with "-" indicate excluded files.
+# Rows can have up to 3 tab separated columns according to this scheme:
+# File name | Target path (for links) | When added (seconds since epoch)
+# Note: The target path can reference files and directories in other locations and thereby
+# allows you to compile albums consisting of files from several different locations.
+
+civic0.gif		1393485531
+civic00sm.jpg		1393485531
+civic01lg.jpg		1393485531
+civic02lg.jpg		1393485531
+civic03lg.jpg		1393485531
+civic04lg.jpg		1393485531
+civic05lg.jpg		1393485531
+civic06lg.jpg		1393485531
+civic07lg.jpg		1393485531
+civic08lg.jpg		1393485531
+civic09lg.jpg		1393485531
+civic10lg.jpg		1393485531
+civic11lg.jpg		1393485531
+civic12lg.jpg		1393485531
+civic13lg.jpg		1393485531
+civic14lg.jpg		1393485531
+civic15lg.jpg		1393485531

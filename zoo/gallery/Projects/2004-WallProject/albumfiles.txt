@@ -1,0 +1,43 @@
+# This file is created by JAlbum. It sets custom file filtering and ordering for this image directory.
+# Files not listed here are added to the end of the album
+# Rows beginning with "-" indicate excluded files.
+# Rows can have up to 3 tab separated columns according to this scheme:
+# File name | Target path (for links) | When added (seconds since epoch)
+# Note: The target path can reference files and directories in other locations and thereby
+# allows you to compile albums consisting of files from several different locations.
+
+wall-00.jpg		1393485531
+wall-01bg.jpg		1393485531
+wall-02Bbg.jpg		1393485531
+wall-02bg.jpg		1393485531
+wall-03bg.jpg		1393485531
+wall-04bg.jpg		1393485531
+wall-05bg.jpg		1393485531
+wall-06bg.jpg		1393485531
+wall-07bg.jpg		1393485531
+wall-08bg.jpg		1393485531
+wall-10bg.jpg		1393485531
+wall-11bg.jpg		1393485531
+wall-12bg.jpg		1393485531
+wall-13bg.jpg		1393485531
+wall-14bg.jpg		1393485531
+wall-15bg.jpg		1393485531
+wall-16bg.jpg		1393485531
+wall-17bg.jpg		1393485531
+wall-18bg.jpg		1393485531
+wall-19bg.jpg		1393485531
+wall-20bg.jpg		1393485531
+wall-21bg.jpg		1393485531
+wall-22bg.jpg		1393485531
+wall-23bg.jpg		1393485531
+wall-24bg.jpg		1393485531
+wall-25bg.jpg		1393485531
+wall-26bg.jpg		1393485531
+wall-27bg.jpg		1393485531
+wall-28bg.jpg		1393485531
+wall-29bg.jpg		1393485531
+wall-30bg.jpg		1393485531
+wall-31bg.jpg		1393485531
+wall-32bg.jpg		1393485531
+wall-33bg.jpg		1393485531
+wall-34bg.jpg		1393485531

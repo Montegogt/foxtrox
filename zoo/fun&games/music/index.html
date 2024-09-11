@@ -1,0 +1,187 @@
+<HTML>
+<head><title>Music Room</title>
+<!--<bgsound src="zombie.mid" loop=INFINITE>-->
+<SCRIPT LANGUAGE="JavaScript">
+<!-- Begin
+songNum = new Array();
+songNum[0] = "#";
+songNum[1] = "alonenow.mid";
+songNum[2] = "american_pie.mid";
+songNum[3] = "beautiful-stranger.mid";
+songNum[4] = "beethovens5th.mid";
+songNum[5] = "beethovensfurelise.mid";
+songNum[6] = "bitesthedust.mid";
+songNum[7] = "blinded.mid";
+songNum[8] = "bohmrap2.mid";
+songNum[9] = "canyon.mid";
+songNum[10] = "catsinthecradle.mid";
+songNum[11] = "cowboy.mid";
+songNum[12] = "sugarplumfairy.mid";
+songNum[13] = "everythingido.mid";
+songNum[14] = "friendsarefor.mid";
+songNum[15] = "frosty.mid";
+songNum[16] = "hip.mid";
+songNum[17] = "its_all_good.mid";
+songNum[18] = "jbrock.mid";
+songNum[19] = "loco.mid";
+songNum[20] = "looneytunes.mid";
+songNum[21] = "move_your_ass.mid";
+songNum[22] = "mozartssymphonyno40.mid";
+songNum[23] = "passport.mid";
+songNum[24] = "ruff_ryders_anthem.mid";
+
+var music = null;
+var track = 0;
+var ver = navigator.appName;
+function audioCheck(plugName) {
+for (var i = 0; i < navigator.plugins.length; i++) {
+if (navigator.plugins[i].name.toLowerCase() == plugName.toLowerCase()) {
+for (var j = 0; j < navigator.plugins[i].length; j++) {
+if (navigator.plugins[i][j].enabledPlugin) {
+return true;
+   }
+}
+return false;
+   }
+}
+return false;
+}
+function chooseSong(s) { // ie
+track = s.options[s.selectedIndex].value; 
+if (ver == "Microsoft Internet Explorer") {
+document.all.music.src = songNum[track]; 
+} else {
+songPlay('play');
+   }
+}
+function songPlay(cmd) { // netscape
+if (audioCheck("LiveAudio")) {
+if (cmd == 'play') {
+document.musicSource.play(false, songNum[track]);
+   }
+} else {
+alert("You Do Not Have The Correct Plugin");
+   }
+}
+//  End -->
+</script>
+
+
+</HEAD>
+
+<BODY>
+<h1>Music Room</h1>
+
+<center>
+
+
+<table BACKGROUND="../images/clouds.jpg" width=100% border=5>
+<tr><td width=75% valign="top" align="middle">
+<IMG SRC="../images/antenna.gif"><font size=5 color=#0000cc><b><i> Welcome to Montego's Music Room </i></b></font><IMG SRC="../images/antenna.gif"><br>
+<br>
+
+<table width=100% border=5 bgcolor=#000000><tr><td width=100% valign="top" align="middle">
+<font size=8><b><u>My Music Library</u></b></font>
+<br>
+
+
+</font></table>
+
+
+<table width=100% border=5>
+<tr><td width=100% valign="top" align="middle">
+
+<br><br>
+<b>
+<A HREF="kplaylist.php">
+<font size=5 FACE=ARIAL>ENTER IF YOU CARE</a>
+</b></font></font><br><br><br>
+
+
+
+</b></font></font><br><br><br></table>
+
+
+<table width=100% border=5><tr><td width=100% valign="top" align="middle">
+<font size=4>
+<A HREF="http://windowsmedia.com/radiotuner/" target=radio><IMG SRC="../../images/onair.gif" border=0><br><b>Find Any Radio Station Around the world<br></font><img height=40 width=400 src="../../images/wmc.gif" border=0></a><br><font size=4></font></table>
+
+
+
+
+
+<td align="middle">
+<center>
+<form name=choose>
+<select size=1 name=track onChange="chooseSong(this);">Click For Music
+<option value="0">Click For Music</option>
+<option value="1">alonenow.mid</option>
+<option value="2">american_pie.mid</option>
+<option value="3">beautiful-stranger.mid</option>
+<option value="4">beethovens5th.mid</option>
+<option value="5">beethovensfurelise.mid</option>
+<option value="6">bitesthedust.mid</option>
+<option value="7">blinded.mid</option>
+<option value="8">bohmrap2.mid</option>
+<option value="9">canyon.mid</option>
+<option value="10">catsinthecradle.mid</option>
+<option value="11">cowboy.mid</option>
+<option value="12">sugarplumfairy.mid</option>
+<option value="13">everythingido.mid</option>
+<option value="14">friendsarefor.mid</option>
+<option value="15">frosty.mid</option>
+<option value="16">hip.mid</option>
+<option value="17">its_all_good.mid</option>
+<option value="18">jbrock.mid</option>
+<option value="19">loco.mid</option>
+<option value="20">looneytunes.mid</option>
+<option value="21">move_your_ass.mid</option>
+<option value="22">mozartssymphonyno40.mid</option>
+<option value="23">passport.mid</option>
+<option value="24">ruff_ryders_anthem.mid</option>
+<select size=1 name=track onChange="stop(this);">
+</select>
+<table><tr><td><input type=button onMouseDown="chooseSong(document.choose.track)" value=" Play ">
+</td><td height=33 valign=bottom>
+<a href="javascript:history.stop(1)" onmouseover="window.status='Stop'; return true;" onmouseout="window.status=''; return true;"><img border=0 src=/support/images/stop.jpg ALT="Stop"></a>
+
+</td></tr></table>
+</form>
+<script language="JavaScript">
+<!-- Begin
+var ver = navigator.appName;
+if (ver == "Microsoft Internet Explorer") {
+document.write('<bgsound src="#" ID=music loop=INFINITE AUTOSTART=true>');
+} else {
+document.write('<embed type="audio/midi" src="aeroplane.mid" AUTOSTART=false hidden=true VOLUME="90" name="musicSource" MASTERSOUND></EMBED>');
+}
+// End -->
+</script>
+
+
+
+</center>
+
+
+<table width=90% border=5 bgcolor=#0000cc><tr><td width=100% valign="top" align="middle">
+<font size=4><b>FREE<br><font size=2>Below are some audio players to download for free. Windows Midea Player is the most commonly used form. If you have an old version of Midea Player it would be a good idea to download the newest version. Midea Player has chainged a lot (for the better).<br>Or, if you like, try out some of the other players.</font></a></table><br>
+
+
+<table width=90% border=5 bgcolor=#0000cc><tr><td width=100% valign="top" align="middle">
+<A HREF="http://www.microsoft.com/windows/windowsmedia/en/download/default.asp" target="_players" class="BodyLink"><IMG SRC="../../images/wmp.jpg" border=0><br></a></table><br>
+
+<table width=90% border=5 bgcolor=#0000cc><tr><td width=100% valign="top" align="middle">
+<img height=90 width=90 src="/../../images/real.jpg"><br><A HREF="http://scopes.real.com/real/player/player1.html?src=010517realhome_1w,010517rpchoice_h1w&dc=519518517" target="_players" class="BodyLink"><IMG SRC="../../images/realplayer.gif"></a><br><font size=2><b><A HREF="http://proforma.real.com/real/jukebox/jukebox.html?src=010517realhome_1w,010320rjbchoice_1&dc=519518517" target="_players" class="BodyLink"><IMG SRC="../../images/realjukebox.gif"></a><br></a></table><br>
+
+<table width=90% border=5 bgcolor=#0000cc><tr><td width=100% valign="top" align="middle">
+<A HREF="http://www.musicmatch.com/download/free/download.cgi?os=pc&mode=input&source=portpage_buttons" target="_players" class="BodyLink"><IMG height=50 width=150 SRC="/support/images/musicmatch2.gif" border=0><br><IMG height=50 width=150 SRC="../../images/musicmatch1.jpg" border=0><br></a></table><br>
+
+
+</table>
+</font>
+
+
+
+</BODY>
+</HTML>
+

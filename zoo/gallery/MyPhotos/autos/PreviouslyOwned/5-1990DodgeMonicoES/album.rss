@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0"
+     xmlns:media="http://search.yahoo.com/mrss/"
+     xmlns:jalbum="http://jalbum.net/jalbumrss">
+    <channel>
+        <title>5-1990DodgeMonicoES</title>
+   	<link>../../../..</link>
+        <generator>jAlbum 11</generator>
+   		<description></description>
+        <jalbum:absolutePath></jalbum:absolutePath>
+        <item>
+            <title>1990DodgeMonicoES2</title>
+            <link>slides/1990DodgeMonicoES2.jpg</link>
+            <pubDate>Thu, 27 Feb 2014 22:08:50 -0800</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/1990DodgeMonicoES2.jpg" width="124" height="124"/>
+            <media:content type="image/jpeg" url="slides/1990DodgeMonicoES2.jpg" width="800" height="572"/>
+            <guid isPermaLink="false">slides/1990DodgeMonicoES2.jpg</guid>
+        </item>
+        <item>
+            <title>1990DodgeMonicoES1</title>
+            <link>slides/1990DodgeMonicoES1.jpg</link>
+            <pubDate>Thu, 27 Feb 2014 22:08:50 -0800</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/1990DodgeMonicoES1.jpg" width="124" height="124"/>
+            <media:content type="image/jpeg" url="slides/1990DodgeMonicoES1.jpg" width="800" height="569"/>
+            <guid isPermaLink="false">slides/1990DodgeMonicoES1.jpg</guid>
+        </item>
+        <item>
+            <title>1990DodgeMonicoES3</title>
+            <link>slides/1990DodgeMonicoES3.jpg</link>
+            <pubDate>Thu, 27 Feb 2014 22:08:50 -0800</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/1990DodgeMonicoES3.jpg" width="124" height="124"/>
+            <media:content type="image/jpeg" url="slides/1990DodgeMonicoES3.jpg" width="800" height="542"/>
+            <guid isPermaLink="false">slides/1990DodgeMonicoES3.jpg</guid>
+        </item>
+        <item>
+            <title>1990DodgeMonicoES5</title>
+            <link>slides/1990DodgeMonicoES5.jpg</link>
+            <pubDate>Thu, 27 Feb 2014 22:08:50 -0800</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/1990DodgeMonicoES5.jpg" width="124" height="124"/>
+            <media:content type="image/jpeg" url="slides/1990DodgeMonicoES5.jpg" width="800" height="537"/>
+            <guid isPermaLink="false">slides/1990DodgeMonicoES5.jpg</guid>
+        </item>
+        <item>
+            <title>1990DodgeMonicoES4</title>
+            <link>slides/1990DodgeMonicoES4.jpg</link>
+            <pubDate>Thu, 27 Feb 2014 22:08:50 -0800</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/1990DodgeMonicoES4.jpg" width="124" height="124"/>
+            <media:content type="image/jpeg" url="slides/1990DodgeMonicoES4.jpg" width="800" height="545"/>
+            <guid isPermaLink="false">slides/1990DodgeMonicoES4.jpg</guid>
+        </item>
+    </channel>
+</rss>

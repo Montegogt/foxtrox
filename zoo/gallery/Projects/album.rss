@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0"
+     xmlns:media="http://search.yahoo.com/mrss/"
+     xmlns:jalbum="http://jalbum.net/jalbumrss">
+    <channel>
+        <title>Projects</title>
+   	<link>..</link>
+        <generator>jAlbum 11</generator>
+   		<description></description>
+        <jalbum:absolutePath></jalbum:absolutePath>
+    	<jalbum:link rel="sub" href="1996-2000-620riverside/album.rss" />   	
+    	<jalbum:link rel="sub" href="2004-WallProject/album.rss" />   	
+    	<jalbum:link rel="sub" href="2005-CivicProject/album.rss" />   	
+    	<jalbum:link rel="sub" href="2005-ConcreteWork/album.rss" />   	
+    	<jalbum:link rel="sub" href="plants/album.rss" />   	
+        
+    </channel>
+</rss>

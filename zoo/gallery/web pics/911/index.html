@@ -1,0 +1,1816 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">	
+	<!-- saved from url=(0014)about:internet -->
+<head>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		<title>gallery &raquo; web pics &raquo; 911</title>
+				
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta name="title" content="gallery" />
+<meta name="keywords" content="gallery, 911, jAlbum 11, Galleria" />
+<meta name="description" content="September 11, 2001 photo collection" />
+<meta property="og:title" content="gallery" />
+<meta property="og:site_name" content="Jalbum" />
+<meta property="fb:app_id" content="140299612674733" />
+		<link href="../../res/galleria/galleria.css" rel="stylesheet" type="text/css" />
+		<link href="../../res/index.css" rel="stylesheet" type="text/css" />		
+		<link href="../../res/common.css" rel="stylesheet" type="text/css" />
+		<style type="text/css">
+	.thumbnails li {
+		width: 124px;
+		height: 124px;
+	}
+
+	#middle_container {
+		height: 680px;
+	}
+
+	#scroller_container {
+		margin-top: 20px;
+		margin-bottom: 10px;
+		width: 770px;	
+	}
+
+	#image_scroller {
+		margin: 0 10px 0 20px;
+		width: 700px;
+	}
+	
+	#thumbnails_container {
+		width: 19460px;
+	}
+	
+	#scroller_container,
+	#image_scroller,
+	#thumbnails_container {
+		height: 140px;
+	}
+	
+	#folders_container {
+		;
+	}		
+	
+	.folders {
+		width: 0px;
+	}
+	
+	.folders li {
+		width: 140px;
+		height: 140px;
+	}
+	
+	.caption,
+	.description {
+		width: 700px;
+	}
+</style>
+		<script src="../../res/jquery.js" type="text/javascript"></script>
+			<script src="../../res/jquery.hotkeys.js" type="text/javascript"></script>
+	<script src="../../res/galleria/jquery.galleria.js" type="text/javascript"></script>
+	<script src="../../res/jquery.scrollimages.js" type="text/javascript"></script>	
+	<script type="text/javascript"><!--//--><![CDATA[//><!--	
+		$(function() {
+			$("#thumbnails_container").imageScroller({
+				onBeforeScroll: function() { $.galleria.stop() },
+				onScroll: function() { $.galleria.start() }, 
+				duration: 120, 
+				imageWidth: 140, 
+				size: 5,
+				fastSteps: 5
+			});
+			
+			var formattedThumbnailOpacity = 81/100;
+			
+			$(".thumbnails_unstyled").addClass("thumbnails");
+			$("ul.thumbnails").galleria({
+				history: false,
+				clickNext: true,
+				insert: "#main_image",
+				onImage: function(image, caption, thumb) {
+					var extras = $("#extras").css("display", "none").empty();
+					image.css("display", "none").fadeIn(500);
+					caption.css("display", "none").fadeIn(500);
+					
+					if (false) {
+						var extrasList = $("<ul></ul>");
+						extrasList.addMetadata("Date", thumb.data("originalDate"));
+						extrasList.addMetadata("Camera", thumb.data("cameraModel"));
+						extrasList.addMetadata("Exposure time", thumb.data("exposureTime"));
+						extrasList.addMetadata("ISO", thumb.data("isoEquivalent"));
+						extrasList.addMetadata("Aperture", thumb.data("aperture"));
+						extrasList.addMetadata("Focus distance", thumb.data("focusDistance"));
+						extrasList.addMetadata("Focal length", thumb.data("focalLength35mm"));
+						extrasList.addMetadata("Keywords", thumb.data("keywords"));
+						if (extrasList.children().length > 0) {
+							extras.append(extrasList);						
+							extrasList.find(":first-child").addClass("first");
+							extras.css({ 
+								width : (image.outerWidth() - (5 * 2) + 100) + "px" 
+							}).fadeIn(500);
+						}
+					}
+					
+					var li = thumb.parents("li");
+					li.siblings().children("img.selected").fadeTo(500, formattedThumbnailOpacity);
+					thumb.fadeTo("fast", 1).addClass("selected");
+					image.attr("title", "Next image");
+					
+					var original = thumb.data("original");
+					if (original) {
+						var originalLink = $("<a></a>").attr("href", original).text("Download original");
+						caption.append(" (").append(originalLink).append(")");
+					}
+				},
+				onThumb: function(thumb) {
+					var li = thumb.parents("li");
+					var fadeTo = li.is(".active") ? "1" : formattedThumbnailOpacity;
+					thumb.css({display: "none", opacity: fadeTo}).fadeIn(1500);
+					thumb.hover(
+						function() { 
+							thumb.fadeTo("fast", 1);		
+						},
+						function() {
+							li.not(".active").children("img").fadeTo("fast", formattedThumbnailOpacity);
+						}
+					)
+				},
+				preloads: 3,
+				fastSteps: 5,
+				onPrev: function() {
+					$.imageScroller.scrollLeft();
+				},
+				onNext: function() {
+					$.imageScroller.scrollRight();
+				},
+				onPrevFast: function() {
+					$.imageScroller.fastScrollLeft();
+				},
+				onNextFast: function() {
+					$.imageScroller.fastScrollRight();
+				},
+				enableSlideshow : true,
+				autostartSlideshow : false,
+				slideshowDelay : 3000,
+				onSlideshowPlayed : function() {
+					$('.play').hide();
+					$('.pause').show();	
+				},
+				onSlideshowPaused : function() {
+					$('.play').show();
+					$('.pause').hide();
+				}
+			});
+			
+			$.galleria.loader = $("<div></div>").addClass("loader").append($(new Image()).attr("src","../../res/loader.gif").attr("title","Loading..."));
+			
+			prepareArrow = function(arrow) {
+				arrow.css({display: "none", opacity: 0.5, "padding-top": "45px"}).fadeIn( 1000);			
+				arrow.hover(
+					function() {
+						arrow.fadeTo("fast", 1);
+					},
+					function() {
+						arrow.fadeTo("fast", 0.5);			
+					}
+				);	
+			}
+			
+			var leftArrow = $("#left_arrow");
+			prepareArrow(leftArrow);
+			leftArrow.click(function() {
+				$.galleria.prev();	
+			});
+			
+			var rightArrow = $("#right_arrow");
+			prepareArrow(rightArrow);
+			rightArrow.click(function() {
+				$.galleria.next();
+			});
+			
+			if (false) {
+				var leftFastArrow = $("#left_fast_arrow");
+				prepareArrow(leftFastArrow);
+				leftFastArrow.click(function() {
+					$.galleria.prevFast();
+				});
+				
+				var rightFastArrow = $("#right_fast_arrow");
+				prepareArrow(rightFastArrow);
+				rightFastArrow.click(function() {
+					$.galleria.nextFast();
+				});
+			}
+		});
+
+		$(document).bind("keydown", "left", function() {
+			if (!KeyboardNavigation.widgetHasFocus()) {
+				$.galleria.prev();
+			}
+		});
+		$(document).bind("keydown", "right", function() {
+			if (!KeyboardNavigation.widgetHasFocus()) {
+				$.galleria.next();
+			}
+		});
+		$(document).bind("keydown", "space", function() {
+			if (!KeyboardNavigation.widgetHasFocus()) {
+				$.galleria.toggleSlideshow();
+			}
+		});
+
+		var KeyboardNavigation = {
+			widgetHasFocus: function() {
+				if(typeof _jaWidgetFocus != 'undefined' && _jaWidgetFocus) {
+					return true;
+				}
+				return false;
+			}
+		}
+	//--><!]]></script>
+
+	<link rel="alternate" href="album.rss" type="application/rss+xml"/>
+</head>
+	<body>
+		<div id="header">
+			<div id="top_container" class="border">
+						<h1><a href="../../index.html">gallery</a> &raquo; <a href="../index.html">web pics</a> &raquo; 911 <span id="slideshow">(<a class="play" href="javascript:void(0);" onclick="$.galleria.playSlideshow();">Play slideshow</a><a class="pause" href="javascript:void(0);" onclick="$.galleria.pauseSlideshow();" style="display:none;">Pause slideshow</a>)</span></h1>
+								<p class="description">September 11, 2001 photo collection</p>
+					
+			</div>
+				
+		</div>
+<div id="main">
+		<div id="scroller_container">
+			<img class="hide" id="left_arrow" src="../../res/left.png" alt="Scroll left" title="Scroll left" />					
+			<div id="image_scroller">
+				<ul id="thumbnails_container" class="thumbnails_unstyled">
+						<li class="active">
+										
+
+							<a href="slides/32.jpg" title="">
+										
+								<img src="thumbs/32.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:450;;height:359</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/33.jpg" title="">
+										
+								<img src="thumbs/33.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:450;;height:301</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/34.jpg" title="">
+										
+								<img src="thumbs/34.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:450;;height:301</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/31.jpg" title="">
+										
+								<img src="thumbs/31.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:450;;height:314</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/28.jpg" title="">
+										
+								<img src="thumbs/28.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:450;;height:339</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/29.jpg" title="">
+										
+								<img src="thumbs/29.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:450;;height:295</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/30.jpg" title="">
+										
+								<img src="thumbs/30.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:450;;height:300</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/39.jpg" title="">
+										
+								<img src="thumbs/39.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:450;;height:320</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/40.jpg" title="">
+										
+								<img src="thumbs/40.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:450;;height:309</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/41.jpg" title="">
+										
+								<img src="thumbs/41.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:367;;height:517</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/38.jpg" title="">
+										
+								<img src="thumbs/38.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:450;;height:277</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/35.jpg" title="">
+										
+								<img src="thumbs/35.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:449;;height:311</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/36.jpg" title="">
+										
+								<img src="thumbs/36.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:450;;height:450</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/37.jpg" title="">
+										
+								<img src="thumbs/37.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:471;;height:650</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/27.jpg" title="">
+										
+								<img src="thumbs/27.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:450;;height:420</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/2002050800.jpg" title="">
+										
+								<img src="thumbs/2002050800.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:400;;height:269</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/2002053100.jpg" title="">
+										
+								<img src="thumbs/2002053100.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:400;;height:269</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/2002053101.jpg" title="">
+										
+								<img src="thumbs/2002053101.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:400;;height:265</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/2002042300.jpg" title="">
+										
+								<img src="thumbs/2002042300.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:400;;height:294</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/2002040100.jpg" title="">
+										
+								<img src="thumbs/2002040100.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:400;;height:268</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/2002040900.jpg" title="">
+										
+								<img src="thumbs/2002040900.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:400;;height:273</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/2002041500.jpg" title="">
+										
+								<img src="thumbs/2002041500.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:400;;height:272</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/24.jpg" title="">
+										
+								<img src="thumbs/24.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:328;;height:450</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/2447.500px.jpg" title="">
+										
+								<img src="thumbs/2447.500px.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:500;;height:325</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/23.jpg" title="">
+										
+								<img src="thumbs/23.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:311;;height:450</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/26.jpg" title="">
+										
+								<img src="thumbs/26.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:450;;height:450</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/2002053102.jpg" title="">
+										
+								<img src="thumbs/2002053102.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:400;;height:274</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/21.jpg" title="">
+										
+								<img src="thumbs/21.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:450;;height:336</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/22.jpg" title="">
+										
+								<img src="thumbs/22.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:444;;height:485</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/42.jpg" title="">
+										
+								<img src="thumbs/42.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:519;;height:365</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/MariaBGracia.jpg" title="">
+										
+								<img src="thumbs/MariaBGracia.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:375;;height:500</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/MarilynWLaney.jpg" title="">
+										
+								<img src="thumbs/MarilynWLaney.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:500;;height:375</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/MarineBakerCompany.jpg" title="">
+										
+								<img src="thumbs/MarineBakerCompany.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:500;;height:221</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/JessicaMaza.jpg" title="">
+										
+								<img src="thumbs/JessicaMaza.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:500;;height:260</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/KimberlyPruitt.jpg" title="">
+										
+								<img src="thumbs/KimberlyPruitt.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:355;;height:500</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/JimMacMillan.jpg" title="">
+										
+								<img src="thumbs/JimMacMillan.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:500;;height:333</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/JoanMyersonShrager.jpg" title="">
+										
+								<img src="thumbs/JoanMyersonShrager.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:333;;height:500</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/PaulSparkes.jpg" title="">
+										
+								<img src="thumbs/PaulSparkes.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:500;;height:200</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/RayFelittoIII.jpg" title="">
+										
+								<img src="thumbs/RayFelittoIII.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:500;;height:376</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/PaulMecca.jpg" title="">
+										
+								<img src="thumbs/PaulMecca.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:500;;height:384</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/RayTapajna.jpg" title="">
+										
+								<img src="thumbs/RayTapajna.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:383;;height:500</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/MichaelJehn.jpg" title="">
+										
+								<img src="thumbs/MichaelJehn.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:500;;height:485</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/MicheleEvans.jpg" title="">
+										
+								<img src="thumbs/MicheleEvans.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:500;;height:354</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/BillyYoung.jpg" title="">
+										
+								<img src="thumbs/BillyYoung.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:500;;height:375</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/CarmaStewart.jpg" title="">
+										
+								<img src="thumbs/CarmaStewart.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:375;;height:500</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/DanShema.jpg" title="">
+										
+								<img src="thumbs/DanShema.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:500;;height:361</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/43.jpg" title="">
+										
+								<img src="thumbs/43.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:126;;height:168</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/BillMidgley.jpg" title="">
+										
+								<img src="thumbs/BillMidgley.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:500;;height:375</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/44.jpg" title="">
+										
+								<img src="thumbs/44.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:168;;height:126</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/9_18_01.jpg" title="">
+										
+								<img src="thumbs/9_18_01.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:800;;height:562</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/GaryTaustine.jpg" title="">
+										
+								<img src="thumbs/GaryTaustine.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:500;;height:355</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/GaryTaustine2.jpg" title="">
+										
+								<img src="thumbs/GaryTaustine2.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:500;;height:375</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/gzfisheye2.jpg" title="">
+										
+								<img src="thumbs/gzfisheye2.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:500;;height:341</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/fh_display.jpg" title="">
+										
+								<img src="thumbs/fh_display.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:400;;height:270</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/display_size.jpg" title="">
+										
+								<img src="thumbs/display_size.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:355;;height:240</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/DonnaMaine-Smith.jpg" title="">
+										
+								<img src="thumbs/DonnaMaine-Smith.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:500;;height:388</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/2002031900.jpg" title="">
+										
+								<img src="thumbs/2002031900.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:400;;height:268</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/2001092101.jpg" title="">
+										
+								<img src="thumbs/2001092101.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:400;;height:270</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/2001091800.jpg" title="">
+										
+								<img src="thumbs/2001091800.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:400;;height:281</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/2001092102.jpg" title="">
+										
+								<img src="thumbs/2001092102.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:400;;height:285</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/2001092300.jpg" title="">
+										
+								<img src="thumbs/2001092300.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:400;;height:281</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/2001092301.jpg" title="">
+										
+								<img src="thumbs/2001092301.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:400;;height:269</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/20.jpg" title="">
+										
+								<img src="thumbs/20.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:450;;height:336</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/19.jpg" title="">
+										
+								<img src="thumbs/19.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:450;;height:336</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/2001091500.jpg" title="">
+										
+								<img src="thumbs/2001091500.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:400;;height:281</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/2001091501.jpg" title="">
+										
+								<img src="thumbs/2001091501.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:400;;height:270</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/2001091502.jpg" title="">
+										
+								<img src="thumbs/2001091502.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:400;;height:267</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/2001100100.jpg" title="">
+										
+								<img src="thumbs/2001100100.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:400;;height:280</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/2001092801.jpg" title="">
+										
+								<img src="thumbs/2001092801.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:400;;height:289</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/2001100200.jpg" title="">
+										
+								<img src="thumbs/2001100200.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:400;;height:278</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/2001100800.jpg" title="">
+										
+								<img src="thumbs/2001100800.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:400;;height:282</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/2001100300.jpg" title="">
+										
+								<img src="thumbs/2001100300.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:400;;height:278</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/2001092600.jpg" title="">
+										
+								<img src="thumbs/2001092600.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:278;;height:400</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/2001092500.jpg" title="">
+										
+								<img src="thumbs/2001092500.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:400;;height:280</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/2001092700.jpg" title="">
+										
+								<img src="thumbs/2001092700.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:400;;height:279</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/2001092800.jpg" title="">
+										
+								<img src="thumbs/2001092800.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:280;;height:400</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/2001092701.jpg" title="">
+										
+								<img src="thumbs/2001092701.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:278;;height:400</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/05.jpg" title="">
+										
+								<img src="thumbs/05.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:450;;height:277</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/18.jpg" title="">
+										
+								<img src="thumbs/18.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:450;;height:307</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/04.jpg" title="">
+										
+								<img src="thumbs/04.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:363;;height:450</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/06.jpg" title="">
+										
+								<img src="thumbs/06.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:450;;height:301</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/08.jpg" title="">
+										
+								<img src="thumbs/08.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:450;;height:300</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/010918.jpg" title="">
+										
+								<img src="thumbs/010918.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:400;;height:281</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/07.jpg" title="">
+										
+								<img src="thumbs/07.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:450;;height:345</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/01.jpg" title="">
+										
+								<img src="thumbs/01.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:341;;height:450</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/011003.jpg" title="">
+										
+								<img src="thumbs/011003.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:400;;height:278</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/02.jpg" title="">
+										
+								<img src="thumbs/02.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:450;;height:299</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/03.jpg" title="">
+										
+								<img src="thumbs/03.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:450;;height:337</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/14.jpg" title="">
+										
+								<img src="thumbs/14.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:257;;height:450</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/13.jpg" title="">
+										
+								<img src="thumbs/13.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:450;;height:281</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/15.jpg" title="">
+										
+								<img src="thumbs/15.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:450;;height:300</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/17.jpg" title="">
+										
+								<img src="thumbs/17.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:450;;height:390</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/16.jpg" title="">
+										
+								<img src="thumbs/16.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:286;;height:449</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/09.jpg" title="">
+										
+								<img src="thumbs/09.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:300;;height:450</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/10.jpg" title="">
+										
+								<img src="thumbs/10.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:300;;height:450</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/10_03_01.jpg" title="">
+										
+								<img src="thumbs/10_03_01.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:566;;height:393</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/12.jpg" title="">
+										
+								<img src="thumbs/12.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:450;;height:324</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/11.jpg" title="">
+										
+								<img src="thumbs/11.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:450;;height:295</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/2002010501.jpg" title="">
+										
+								<img src="thumbs/2002010501.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:400;;height:270</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/2002010500.jpg" title="">
+										
+								<img src="thumbs/2002010500.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:400;;height:269</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/2002010800.jpg" title="">
+										
+								<img src="thumbs/2002010800.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:270;;height:400</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/2002012000.jpg" title="">
+										
+								<img src="thumbs/2002012000.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:400;;height:280</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/2002012001.jpg" title="">
+										
+								<img src="thumbs/2002012001.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:400;;height:279</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/2001121600.jpg" title="">
+										
+								<img src="thumbs/2001121600.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:400;;height:269</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/2001121200.jpg" title="">
+										
+								<img src="thumbs/2001121200.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:400;;height:281</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/2001121800.jpg" title="">
+										
+								<img src="thumbs/2001121800.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:400;;height:270</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/2001122800.jpg" title="">
+										
+								<img src="thumbs/2001122800.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:400;;height:280</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/2001122100.jpg" title="">
+										
+								<img src="thumbs/2001122100.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:400;;height:267</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/2002031100.jpg" title="">
+										
+								<img src="thumbs/2002031100.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:400;;height:276</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/2002030600.jpg" title="">
+										
+								<img src="thumbs/2002030600.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:400;;height:279</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/2002031200.jpg" title="">
+										
+								<img src="thumbs/2002031200.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:400;;height:279</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/2002031700.jpg" title="">
+										
+								<img src="thumbs/2002031700.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:400;;height:280</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/2002031400.jpg" title="">
+										
+								<img src="thumbs/2002031400.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:400;;height:275</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/2002012003.jpg" title="">
+										
+								<img src="thumbs/2002012003.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:274;;height:400</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/2002012002.jpg" title="">
+										
+								<img src="thumbs/2002012002.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:400;;height:275</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/2002020500.jpg" title="">
+										
+								<img src="thumbs/2002020500.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:400;;height:270</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/2002021501.jpg" title="">
+										
+								<img src="thumbs/2002021501.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:279;;height:400</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/2002021500.jpg" title="">
+										
+								<img src="thumbs/2002021500.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:400;;height:277</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/2001121100.jpg" title="">
+										
+								<img src="thumbs/2001121100.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:276;;height:400</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/2001101202.jpg" title="">
+										
+								<img src="thumbs/2001101202.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:400;;height:281</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/2001101500.jpg" title="">
+										
+								<img src="thumbs/2001101500.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:400;;height:280</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/2001101800.jpg" title="">
+										
+								<img src="thumbs/2001101800.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:400;;height:278</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/2001102800.jpg" title="">
+										
+								<img src="thumbs/2001102800.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:400;;height:280</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/2001100901.jpg" title="">
+										
+								<img src="thumbs/2001100901.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:400;;height:270</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/2001102000.jpg" title="">
+										
+								<img src="thumbs/2001102000.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:400;;height:278</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/2001100900.jpg" title="">
+										
+								<img src="thumbs/2001100900.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:269;;height:400</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/2001101100.jpg" title="">
+										
+								<img src="thumbs/2001101100.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:400;;height:271</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/2001101201.jpg" title="">
+										
+								<img src="thumbs/2001101201.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:400;;height:282</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/2001101200.jpg" title="">
+										
+								<img src="thumbs/2001101200.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:400;;height:278</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/2001112701.jpg" title="">
+										
+								<img src="thumbs/2001112701.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:400;;height:276</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/2001112700.jpg" title="">
+										
+								<img src="thumbs/2001112700.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:400;;height:281</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/2001113000.jpg" title="">
+										
+								<img src="thumbs/2001113000.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:400;;height:268</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/2001120800.jpg" title="">
+										
+								<img src="thumbs/2001120800.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:280;;height:400</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/2001110400.jpg" title="">
+										
+								<img src="thumbs/2001110400.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:288;;height:400</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/2001120200.jpg" title="">
+										
+								<img src="thumbs/2001120200.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:400;;height:278</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/2001110100.jpg" title="">
+										
+								<img src="thumbs/2001110100.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:400;;height:277</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/2001111400.jpg" title="">
+										
+								<img src="thumbs/2001111400.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:400;;height:269</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/2001112500.jpg" title="">
+										
+								<img src="thumbs/2001112500.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:400;;height:283</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/2001112400.jpg" title="">
+										
+								<img src="thumbs/2001112400.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:400;;height:278</span>
+						</li>
+						
+				</ul>
+				<div class="clear"></div>
+			</div>					
+			<img class="hide" id="right_arrow" src="../../res/right.png" alt="Scroll right" title="Scroll right" />
+			
+			<div class="clear"></div>
+		</div>
+		<div class="clear"></div>
+		<div id="middle_container">
+			<div id="main_image"></div>
+			<div id="extras"></div>
+		</div>
+	<div class="clear"></div>	
+</div>
+<div class="clear"></div>
+		<div id="footer">
+				<p id="bottom_container">
+					<a href="http://jalbum.net" target="_blank" title="jAlbum 11">Create online photo albums with jAlbum</a> and <a href="http://jalbum.net/skins/skin/Galleria" title="Galleria">Galleria</a>.
+				</p>
+		</div>
+		
+		
+		
+	<!--</body><div id="jalbumwidgetcontainer"></div>
+<script type="text/javascript"><!--//--><![CDATA[//><!--
+_jaSkin = "Galleria";
+_jaStyle = "Dark.css";
+_jaVersion = "11.6.14";
+_jaGeneratorType = "desktop";
+_jaLanguage = "en";
+_jaPageType = "index";
+_jaRootPath = "../..";
+_jaGuid = "1393484912880";
+var script = document.createElement("script");
+script.type = "text/javascript";
+script.src = "http://jalbum.net/widgetapi/load.js";
+document.getElementById("jalbumwidgetcontainer").appendChild(script);
+//--><!]]></script>
+
+</body>
+</html>
+

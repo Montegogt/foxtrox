@@ -1,0 +1,606 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">	
+	<!-- saved from url=(0014)about:internet -->
+<head>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		<title>gallery &raquo; Events &raquo; 4x4-OffRoading &raquo; 4x4-2002jun</title>
+				
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta name="title" content="gallery" />
+<meta name="keywords" content="gallery, 4x4-2002jun, jAlbum 11, Galleria" />
+<meta name="description" content="gallery" />
+<meta property="og:title" content="gallery" />
+<meta property="og:site_name" content="Jalbum" />
+<meta property="fb:app_id" content="140299612674733" />
+		<link href="../../../res/galleria/galleria.css" rel="stylesheet" type="text/css" />
+		<link href="../../../res/index.css" rel="stylesheet" type="text/css" />		
+		<link href="../../../res/common.css" rel="stylesheet" type="text/css" />
+		<style type="text/css">
+	.thumbnails li {
+		width: 124px;
+		height: 124px;
+	}
+
+	#middle_container {
+		height: 630px;
+	}
+
+	#scroller_container {
+		margin-top: 20px;
+		margin-bottom: 10px;
+		width: 770px;	
+	}
+
+	#image_scroller {
+		margin: 0 10px 0 20px;
+		width: 700px;
+	}
+	
+	#thumbnails_container {
+		width: 4060px;
+	}
+	
+	#scroller_container,
+	#image_scroller,
+	#thumbnails_container {
+		height: 140px;
+	}
+	
+	#folders_container {
+		;
+	}		
+	
+	.folders {
+		width: 0px;
+	}
+	
+	.folders li {
+		width: 140px;
+		height: 140px;
+	}
+	
+	.caption,
+	.description {
+		width: 700px;
+	}
+</style>
+		<script src="../../../res/jquery.js" type="text/javascript"></script>
+			<script src="../../../res/jquery.hotkeys.js" type="text/javascript"></script>
+	<script src="../../../res/galleria/jquery.galleria.js" type="text/javascript"></script>
+	<script src="../../../res/jquery.scrollimages.js" type="text/javascript"></script>	
+	<script type="text/javascript"><!--//--><![CDATA[//><!--	
+		$(function() {
+			$("#thumbnails_container").imageScroller({
+				onBeforeScroll: function() { $.galleria.stop() },
+				onScroll: function() { $.galleria.start() }, 
+				duration: 120, 
+				imageWidth: 140, 
+				size: 5,
+				fastSteps: 5
+			});
+			
+			var formattedThumbnailOpacity = 81/100;
+			
+			$(".thumbnails_unstyled").addClass("thumbnails");
+			$("ul.thumbnails").galleria({
+				history: false,
+				clickNext: true,
+				insert: "#main_image",
+				onImage: function(image, caption, thumb) {
+					var extras = $("#extras").css("display", "none").empty();
+					image.css("display", "none").fadeIn(500);
+					caption.css("display", "none").fadeIn(500);
+					
+					if (false) {
+						var extrasList = $("<ul></ul>");
+						extrasList.addMetadata("Date", thumb.data("originalDate"));
+						extrasList.addMetadata("Camera", thumb.data("cameraModel"));
+						extrasList.addMetadata("Exposure time", thumb.data("exposureTime"));
+						extrasList.addMetadata("ISO", thumb.data("isoEquivalent"));
+						extrasList.addMetadata("Aperture", thumb.data("aperture"));
+						extrasList.addMetadata("Focus distance", thumb.data("focusDistance"));
+						extrasList.addMetadata("Focal length", thumb.data("focalLength35mm"));
+						extrasList.addMetadata("Keywords", thumb.data("keywords"));
+						if (extrasList.children().length > 0) {
+							extras.append(extrasList);						
+							extrasList.find(":first-child").addClass("first");
+							extras.css({ 
+								width : (image.outerWidth() - (5 * 2) + 100) + "px" 
+							}).fadeIn(500);
+						}
+					}
+					
+					var li = thumb.parents("li");
+					li.siblings().children("img.selected").fadeTo(500, formattedThumbnailOpacity);
+					thumb.fadeTo("fast", 1).addClass("selected");
+					image.attr("title", "Next image");
+					
+					var original = thumb.data("original");
+					if (original) {
+						var originalLink = $("<a></a>").attr("href", original).text("Download original");
+						caption.append(" (").append(originalLink).append(")");
+					}
+				},
+				onThumb: function(thumb) {
+					var li = thumb.parents("li");
+					var fadeTo = li.is(".active") ? "1" : formattedThumbnailOpacity;
+					thumb.css({display: "none", opacity: fadeTo}).fadeIn(1500);
+					thumb.hover(
+						function() { 
+							thumb.fadeTo("fast", 1);		
+						},
+						function() {
+							li.not(".active").children("img").fadeTo("fast", formattedThumbnailOpacity);
+						}
+					)
+				},
+				preloads: 3,
+				fastSteps: 5,
+				onPrev: function() {
+					$.imageScroller.scrollLeft();
+				},
+				onNext: function() {
+					$.imageScroller.scrollRight();
+				},
+				onPrevFast: function() {
+					$.imageScroller.fastScrollLeft();
+				},
+				onNextFast: function() {
+					$.imageScroller.fastScrollRight();
+				},
+				enableSlideshow : true,
+				autostartSlideshow : false,
+				slideshowDelay : 3000,
+				onSlideshowPlayed : function() {
+					$('.play').hide();
+					$('.pause').show();	
+				},
+				onSlideshowPaused : function() {
+					$('.play').show();
+					$('.pause').hide();
+				}
+			});
+			
+			$.galleria.loader = $("<div></div>").addClass("loader").append($(new Image()).attr("src","../../../res/loader.gif").attr("title","Loading..."));
+			
+			prepareArrow = function(arrow) {
+				arrow.css({display: "none", opacity: 0.5, "padding-top": "45px"}).fadeIn( 1000);			
+				arrow.hover(
+					function() {
+						arrow.fadeTo("fast", 1);
+					},
+					function() {
+						arrow.fadeTo("fast", 0.5);			
+					}
+				);	
+			}
+			
+			var leftArrow = $("#left_arrow");
+			prepareArrow(leftArrow);
+			leftArrow.click(function() {
+				$.galleria.prev();	
+			});
+			
+			var rightArrow = $("#right_arrow");
+			prepareArrow(rightArrow);
+			rightArrow.click(function() {
+				$.galleria.next();
+			});
+			
+			if (false) {
+				var leftFastArrow = $("#left_fast_arrow");
+				prepareArrow(leftFastArrow);
+				leftFastArrow.click(function() {
+					$.galleria.prevFast();
+				});
+				
+				var rightFastArrow = $("#right_fast_arrow");
+				prepareArrow(rightFastArrow);
+				rightFastArrow.click(function() {
+					$.galleria.nextFast();
+				});
+			}
+		});
+
+		$(document).bind("keydown", "left", function() {
+			if (!KeyboardNavigation.widgetHasFocus()) {
+				$.galleria.prev();
+			}
+		});
+		$(document).bind("keydown", "right", function() {
+			if (!KeyboardNavigation.widgetHasFocus()) {
+				$.galleria.next();
+			}
+		});
+		$(document).bind("keydown", "space", function() {
+			if (!KeyboardNavigation.widgetHasFocus()) {
+				$.galleria.toggleSlideshow();
+			}
+		});
+
+		var KeyboardNavigation = {
+			widgetHasFocus: function() {
+				if(typeof _jaWidgetFocus != 'undefined' && _jaWidgetFocus) {
+					return true;
+				}
+				return false;
+			}
+		}
+	//--><!]]></script>
+
+	<link rel="alternate" href="album.rss" type="application/rss+xml"/>
+</head>
+	<body>
+		<div id="header">
+			<div id="top_container" class="border">
+						<h1><a href="../../../index.html">gallery</a> &raquo; <a href="../../index.html">Events</a> &raquo; <a href="../index.html">4x4-OffRoading</a> &raquo; 4x4-2002jun <span id="slideshow">(<a class="play" href="javascript:void(0);" onclick="$.galleria.playSlideshow();">Play slideshow</a><a class="pause" href="javascript:void(0);" onclick="$.galleria.pauseSlideshow();" style="display:none;">Pause slideshow</a>)</span></h1>
+							
+					
+			</div>
+				
+		</div>
+<div id="main">
+		<div id="scroller_container">
+			<img class="hide" id="left_arrow" src="../../../res/left.png" alt="Scroll left" title="Scroll left" />					
+			<div id="image_scroller">
+				<ul id="thumbnails_container" class="thumbnails_unstyled">
+						<li class="active">
+										
+
+							<a href="slides/jun12-12.jpg" title="">
+										
+								<img src="thumbs/jun12-12.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:640;;height:480</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/jun13-12.jpg" title="">
+										
+								<img src="thumbs/jun13-12.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:640;;height:480</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/jun14-12.jpg" title="">
+										
+								<img src="thumbs/jun14-12.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:640;;height:480</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/jun11-12.jpg" title="">
+										
+								<img src="thumbs/jun11-12.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:640;;height:480</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/jun08-12.jpg" title="">
+										
+								<img src="thumbs/jun08-12.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:800;;height:559</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/jun09-12.jpg" title="">
+										
+								<img src="thumbs/jun09-12.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:800;;height:559</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/jun10-12.jpg" title="">
+										
+								<img src="thumbs/jun10-12.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:800;;height:559</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/jun19-12.jpg" title="">
+										
+								<img src="thumbs/jun19-12.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:640;;height:480</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/jun20-12.jpg" title="">
+										
+								<img src="thumbs/jun20-12.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:640;;height:480</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/jun21-12.jpg" title="">
+										
+								<img src="thumbs/jun21-12.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:640;;height:480</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/jun15-12.jpg" title="">
+										
+								<img src="thumbs/jun15-12.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:640;;height:480</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/jun18-12.jpg" title="">
+										
+								<img src="thumbs/jun18-12.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:640;;height:480</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/jun16-12.jpg" title="">
+										
+								<img src="thumbs/jun16-12.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:640;;height:480</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/jun17-12.jpg" title="">
+										
+								<img src="thumbs/jun17-12.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:640;;height:480</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/jun07-12.jpg" title="">
+										
+								<img src="thumbs/jun07-12.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:800;;height:559</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/jun04-12.jpg" title="">
+										
+								<img src="thumbs/jun04-12.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:800;;height:559</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/jun05-12.jpg" title="">
+										
+								<img src="thumbs/jun05-12.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:800;;height:559</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/jun06-12.jpg" title="">
+										
+								<img src="thumbs/jun06-12.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:800;;height:559</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/jun03-12.jpg" title="">
+										
+								<img src="thumbs/jun03-12.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:800;;height:559</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/jun01-15.jpg" title="">
+										
+								<img src="thumbs/jun01-15.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:800;;height:600</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/jun02-12.jpg" title="">
+										
+								<img src="thumbs/jun02-12.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:800;;height:559</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/2002_06_23_DownAHill.jpg" title="">
+										
+								<img src="thumbs/2002_06_23_DownAHill.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>original:2002_06_23_DownAHill.mp4;;width:360;;height:202</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/06_23_2002_JerryTow.jpg" title="">
+										
+								<img src="thumbs/06_23_2002_JerryTow.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>original:06_23_2002_JerryTow.mp4;;width:360;;height:202</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/06_23_2002_EmmanuelDitch.jpg" title="">
+										
+								<img src="thumbs/06_23_2002_EmmanuelDitch.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>original:06_23_2002_EmmanuelDitch.mp4;;width:360;;height:202</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/06_22_2002_ShannonHills.jpg" title="">
+										
+								<img src="thumbs/06_22_2002_ShannonHills.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>original:06_22_2002_ShannonHills.mp4;;width:360;;height:202</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/2002_06_23_DownAHill.jpg" title="">
+										
+								<img src="thumbs/2002_06_23_DownAHill.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>original:2002_06_23_DownAHill.mp4;;width:360;;height:202</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/06_22_2002_ShannonHills.jpg" title="">
+										
+								<img src="thumbs/06_22_2002_ShannonHills.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>original:06_22_2002_ShannonHills.mp4;;width:360;;height:202</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/06_23_2002_EmmanuelDitch.jpg" title="">
+										
+								<img src="thumbs/06_23_2002_EmmanuelDitch.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>original:06_23_2002_EmmanuelDitch.mp4;;width:360;;height:202</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/06_23_2002_JerryTow.jpg" title="">
+										
+								<img src="thumbs/06_23_2002_JerryTow.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>original:06_23_2002_JerryTow.mp4;;width:360;;height:202</span>
+						</li>
+						
+				</ul>
+				<div class="clear"></div>
+			</div>					
+			<img class="hide" id="right_arrow" src="../../../res/right.png" alt="Scroll right" title="Scroll right" />
+			
+			<div class="clear"></div>
+		</div>
+		<div class="clear"></div>
+		<div id="middle_container">
+			<div id="main_image"></div>
+			<div id="extras"></div>
+		</div>
+	<div class="clear"></div>	
+</div>
+<div class="clear"></div>
+		<div id="footer">
+				<p id="bottom_container">
+					<a href="http://jalbum.net" target="_blank" title="jAlbum 11">Create online photo albums with jAlbum</a> and <a href="http://jalbum.net/skins/skin/Galleria" title="Galleria">Galleria</a>.
+				</p>
+		</div>
+		
+		
+		
+	<!--</body><div id="jalbumwidgetcontainer"></div>
+<script type="text/javascript"><!--//--><![CDATA[//><!--
+_jaSkin = "Galleria";
+_jaStyle = "Dark.css";
+_jaVersion = "11.6.14";
+_jaGeneratorType = "desktop";
+_jaLanguage = "en";
+_jaPageType = "index";
+_jaRootPath = "../../..";
+_jaGuid = "1393484912880";
+var script = document.createElement("script");
+script.type = "text/javascript";
+script.src = "http://jalbum.net/widgetapi/load.js";
+document.getElementById("jalbumwidgetcontainer").appendChild(script);
+//--><!]]></script>
+
+</body>
+</html>
+

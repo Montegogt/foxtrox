@@ -1,0 +1,16 @@
+# This file is created by JAlbum. It sets custom file filtering and ordering for this image directory.
+# Files not listed here are added to the end of the album
+# Rows beginning with "-" indicate excluded files.
+# Rows can have up to 3 tab separated columns according to this scheme:
+# File name | Target path (for links) | When added (seconds since epoch)
+# Note: The target path can reference files and directories in other locations and thereby
+# allows you to compile albums consisting of files from several different locations.
+
+2-1973MurcuryMontegoGT		1393486106
+5-1990DodgeMonicoES		1393486106
+6-1969ChevyChevelle		1393486106
+8-1976GMCJimmy		1393486106
+7-1981 Chevy Blazer K5.jpg		1393486106
+4-1970 Chevy Chevelle.jpg		1393486106
+1-1985 Olds Omega.jpg		1393486106
+3-1989 Ford Escort GT.jpg		1393486106

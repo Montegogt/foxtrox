@@ -1,0 +1,37 @@
+# This file is created by JAlbum. It sets custom file filtering and ordering for this image directory.
+# Files not listed here are added to the end of the album
+# Rows beginning with "-" indicate excluded files.
+# Rows can have up to 3 tab separated columns according to this scheme:
+# File name | Target path (for links) | When added (seconds since epoch)
+# Note: The target path can reference files and directories in other locations and thereby
+# allows you to compile albums consisting of files from several different locations.
+
+jun12-12.jpg		1393485558
+jun13-12.jpg		1393485558
+jun14-12.jpg		1393485558
+jun11-12.jpg		1393485558
+jun08-12.jpg		1393485558
+jun09-12.jpg		1393485558
+jun10-12.jpg		1393485558
+jun19-12.jpg		1393485558
+jun20-12.jpg		1393485558
+jun21-12.jpg		1393485558
+jun15-12.jpg		1393485558
+jun18-12.jpg		1393485558
+jun16-12.jpg		1393485558
+jun17-12.jpg		1393485558
+jun07-12.jpg		1393485558
+jun04-12.jpg		1393485558
+jun05-12.jpg		1393485558
+jun06-12.jpg		1393485558
+jun03-12.jpg		1393485558
+jun01-15.jpg		1393485558
+jun02-12.jpg		1393485558
+2002_06_23_DownAHill.asf		1393485558
+06_23_2002_JerryTow.asf		1393485558
+06_23_2002_EmmanuelDitch.asf		1393485558
+06_22_2002_ShannonHills.asf		1393485558
+2002_06_23_DownAHill.mp4		1393486768
+06_22_2002_ShannonHills.mp4		1393486768
+06_23_2002_EmmanuelDitch.mp4		1393566277
+06_23_2002_JerryTow.mp4		1393566277

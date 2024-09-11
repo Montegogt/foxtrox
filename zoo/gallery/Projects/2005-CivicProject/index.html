@@ -1,0 +1,652 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">	
+	<!-- saved from url=(0014)about:internet -->
+<head>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		<title>gallery &raquo; Projects &raquo; 2005-CivicProject</title>
+				
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta name="title" content="gallery" />
+<meta name="keywords" content="gallery, 2005-CivicProject, jAlbum 11, Galleria" />
+<meta name="description" content="
+
+	
+	
+
+
+ 
+  Item
+  From
+  Quanity
+  Price pereach
+  Total
+  
+ 
+ 
+  Used Japanise engine
+  Alpha Engines
+  1
+  $555.00
+  $555.00
+  
+ 
+ 
+  Repair Manual
+  Shucks
+  1
+  $17.99
+  $17.99
+  
+ 
+ 
+  Engine Flush
+  Shucks
+  1
+  $3.29
+  $3.29
+  
+ 
+ 
+  1/2 to 1/4 socket adaptor
+  Shucks
+  1
+  $4.99
+  $4.99
+  
+ 
+ 
+  1/4 to 1/2 socket adaptor
+  Shucks
+  1
+  $6.49
+  $6.49
+  
+ 
+ 
+  1/2&quot; deep metric sockets
+  Big Lots
+  1
+  $7.99
+  $7.99
+  
+ 
+  1/4&quot; deep metric sockets
+  Big Lots
+  1
+  $5.99
+  $5.99
+  
+ 
+ 
+  60 Month Battery
+  Bi-mart
+  1
+  $36.99
+  $36.99
+  
+ 
+ 
+  Anti-Freeze
+  Bi-mart
+  1
+  $6.49
+  $6.49
+  
+ 
+ 
+  Standard Oil Filter
+  Bi-mart
+  1
+  $3.39
+  $3.39
+  
+ 
+ 
+  Mobil Morter Oil
+  Bi-mart
+  8
+  $1.19
+  $9.52
+  
+ 
+ 
+  Fuel Injector
+  Cleaner
+  Bi-mart
+  1
+  $0.99
+  $0.99
+  
+ 
+ 
+  Autolite
+  Platnum Spark Plugs
+  Bi-mart
+  1
+  $7.96
+  $7.96
+  
+ 
+ 
+  1/2&quot; Impact Wrench
+  Lowe's
+  1
+  $79.00
+  $79.00
+  
+ 
+ 
+  
+  
+  
+  GrandTotal
+  $746.08
+  
+ 
+
+
+
+	
+	
+	Well the project is done. As you can see by the tally sheet, the cost is much less than a shop would have done ($2000-$2500 for a rebuilt or $1500-$1800 for a used engine {same as what I got}). It is a great benefit to learn to do things your self. Now that I have the tools and the know-how, I could do the same project with less time and less money, if it was a similar Civic. Even on another car, I would have an idea of what to expect.
+	" />
+<meta property="og:title" content="gallery" />
+<meta property="og:site_name" content="Jalbum" />
+<meta property="fb:app_id" content="140299612674733" />
+		<link href="../../res/galleria/galleria.css" rel="stylesheet" type="text/css" />
+		<link href="../../res/index.css" rel="stylesheet" type="text/css" />		
+		<link href="../../res/common.css" rel="stylesheet" type="text/css" />
+		<style type="text/css">
+	.thumbnails li {
+		width: 124px;
+		height: 124px;
+	}
+
+	#middle_container {
+		height: 644px;
+	}
+
+	#scroller_container {
+		margin-top: 20px;
+		margin-bottom: 10px;
+		width: 770px;	
+	}
+
+	#image_scroller {
+		margin: 0 10px 0 20px;
+		width: 700px;
+	}
+	
+	#thumbnails_container {
+		width: 2380px;
+	}
+	
+	#scroller_container,
+	#image_scroller,
+	#thumbnails_container {
+		height: 140px;
+	}
+	
+	#folders_container {
+		;
+	}		
+	
+	.folders {
+		width: 0px;
+	}
+	
+	.folders li {
+		width: 140px;
+		height: 140px;
+	}
+	
+	.caption,
+	.description {
+		width: 700px;
+	}
+</style>
+		<script src="../../res/jquery.js" type="text/javascript"></script>
+			<script src="../../res/jquery.hotkeys.js" type="text/javascript"></script>
+	<script src="../../res/galleria/jquery.galleria.js" type="text/javascript"></script>
+	<script src="../../res/jquery.scrollimages.js" type="text/javascript"></script>	
+	<script type="text/javascript"><!--//--><![CDATA[//><!--	
+		$(function() {
+			$("#thumbnails_container").imageScroller({
+				onBeforeScroll: function() { $.galleria.stop() },
+				onScroll: function() { $.galleria.start() }, 
+				duration: 120, 
+				imageWidth: 140, 
+				size: 5,
+				fastSteps: 5
+			});
+			
+			var formattedThumbnailOpacity = 81/100;
+			
+			$(".thumbnails_unstyled").addClass("thumbnails");
+			$("ul.thumbnails").galleria({
+				history: false,
+				clickNext: true,
+				insert: "#main_image",
+				onImage: function(image, caption, thumb) {
+					var extras = $("#extras").css("display", "none").empty();
+					image.css("display", "none").fadeIn(500);
+					caption.css("display", "none").fadeIn(500);
+					
+					if (false) {
+						var extrasList = $("<ul></ul>");
+						extrasList.addMetadata("Date", thumb.data("originalDate"));
+						extrasList.addMetadata("Camera", thumb.data("cameraModel"));
+						extrasList.addMetadata("Exposure time", thumb.data("exposureTime"));
+						extrasList.addMetadata("ISO", thumb.data("isoEquivalent"));
+						extrasList.addMetadata("Aperture", thumb.data("aperture"));
+						extrasList.addMetadata("Focus distance", thumb.data("focusDistance"));
+						extrasList.addMetadata("Focal length", thumb.data("focalLength35mm"));
+						extrasList.addMetadata("Keywords", thumb.data("keywords"));
+						if (extrasList.children().length > 0) {
+							extras.append(extrasList);						
+							extrasList.find(":first-child").addClass("first");
+							extras.css({ 
+								width : (image.outerWidth() - (5 * 2) + 100) + "px" 
+							}).fadeIn(500);
+						}
+					}
+					
+					var li = thumb.parents("li");
+					li.siblings().children("img.selected").fadeTo(500, formattedThumbnailOpacity);
+					thumb.fadeTo("fast", 1).addClass("selected");
+					image.attr("title", "Next image");
+					
+					var original = thumb.data("original");
+					if (original) {
+						var originalLink = $("<a></a>").attr("href", original).text("Download original");
+						caption.append(" (").append(originalLink).append(")");
+					}
+				},
+				onThumb: function(thumb) {
+					var li = thumb.parents("li");
+					var fadeTo = li.is(".active") ? "1" : formattedThumbnailOpacity;
+					thumb.css({display: "none", opacity: fadeTo}).fadeIn(1500);
+					thumb.hover(
+						function() { 
+							thumb.fadeTo("fast", 1);		
+						},
+						function() {
+							li.not(".active").children("img").fadeTo("fast", formattedThumbnailOpacity);
+						}
+					)
+				},
+				preloads: 3,
+				fastSteps: 5,
+				onPrev: function() {
+					$.imageScroller.scrollLeft();
+				},
+				onNext: function() {
+					$.imageScroller.scrollRight();
+				},
+				onPrevFast: function() {
+					$.imageScroller.fastScrollLeft();
+				},
+				onNextFast: function() {
+					$.imageScroller.fastScrollRight();
+				},
+				enableSlideshow : true,
+				autostartSlideshow : false,
+				slideshowDelay : 3000,
+				onSlideshowPlayed : function() {
+					$('.play').hide();
+					$('.pause').show();	
+				},
+				onSlideshowPaused : function() {
+					$('.play').show();
+					$('.pause').hide();
+				}
+			});
+			
+			$.galleria.loader = $("<div></div>").addClass("loader").append($(new Image()).attr("src","../../res/loader.gif").attr("title","Loading..."));
+			
+			prepareArrow = function(arrow) {
+				arrow.css({display: "none", opacity: 0.5, "padding-top": "45px"}).fadeIn( 1000);			
+				arrow.hover(
+					function() {
+						arrow.fadeTo("fast", 1);
+					},
+					function() {
+						arrow.fadeTo("fast", 0.5);			
+					}
+				);	
+			}
+			
+			var leftArrow = $("#left_arrow");
+			prepareArrow(leftArrow);
+			leftArrow.click(function() {
+				$.galleria.prev();	
+			});
+			
+			var rightArrow = $("#right_arrow");
+			prepareArrow(rightArrow);
+			rightArrow.click(function() {
+				$.galleria.next();
+			});
+			
+			if (false) {
+				var leftFastArrow = $("#left_fast_arrow");
+				prepareArrow(leftFastArrow);
+				leftFastArrow.click(function() {
+					$.galleria.prevFast();
+				});
+				
+				var rightFastArrow = $("#right_fast_arrow");
+				prepareArrow(rightFastArrow);
+				rightFastArrow.click(function() {
+					$.galleria.nextFast();
+				});
+			}
+		});
+
+		$(document).bind("keydown", "left", function() {
+			if (!KeyboardNavigation.widgetHasFocus()) {
+				$.galleria.prev();
+			}
+		});
+		$(document).bind("keydown", "right", function() {
+			if (!KeyboardNavigation.widgetHasFocus()) {
+				$.galleria.next();
+			}
+		});
+		$(document).bind("keydown", "space", function() {
+			if (!KeyboardNavigation.widgetHasFocus()) {
+				$.galleria.toggleSlideshow();
+			}
+		});
+
+		var KeyboardNavigation = {
+			widgetHasFocus: function() {
+				if(typeof _jaWidgetFocus != 'undefined' && _jaWidgetFocus) {
+					return true;
+				}
+				return false;
+			}
+		}
+	//--><!]]></script>
+
+	<link rel="alternate" href="album.rss" type="application/rss+xml"/>
+</head>
+	<body>
+		<div id="header">
+			<div id="top_container" class="border">
+						<h1><a href="../../index.html">gallery</a> &raquo; <a href="../index.html">Projects</a> &raquo; 2005-CivicProject <span id="slideshow">(<a class="play" href="javascript:void(0);" onclick="$.galleria.playSlideshow();">Play slideshow</a><a class="pause" href="javascript:void(0);" onclick="$.galleria.pauseSlideshow();" style="display:none;">Pause slideshow</a>)</span></h1>
+								<p class="description">
+								
+<table align=center>	<tr><td></td>	<td><table border=1> <tr>  <td><b>Item</b></td>  <td><b>From</b></td>  <td><b>Quanity</b></td>  <td><b>Price per<br>each</b></td>  <td><b>Total</b></td> </tr> 
+<tr>  <td>Used Japanise engine</td>  <td>Alpha Engines</td>  <td>1</td>  <td>$555.00</td>  <td>$555.00</td>  </tr> 
+<tr>  <td>Repair Manual</td>  <td>Shucks</td>  <td>1</td>  <td>$17.99</td>  <td>$17.99</td> </tr> 
+<tr>  <td>Engine Flush</td>  <td>Shucks</td>  <td>1</td>  <td>$3.29</td>  <td>$3.29</td> </tr> 
+<tr>  <td>1/2 to 1/4 socket adaptor</td>  <td>Shucks</td>  <td>1</td>  <td>$4.99</td>  <td>$4.99</td> </tr> 
+<tr>  <td>1/4 to 1/2 socket adaptor</td>  <td>Shucks</td>  <td>1</td>  <td>$6.49</td>  <td>$6.49</td> </tr> 
+<tr>  <td>1/2&quot; deep metric sockets</td>  <td>Big Lots</td>  <td>1</td>  <td>$7.99</td>  <td>$7.99</td> </tr> 
+<tr>  <td>1/4&quot; deep metric sockets</td>  <td>Big Lots</td>  <td >1</td>  <td>$5.99</td>  <td>$5.99</td> </tr> 
+<tr>  <td>60 Month Battery</td>  <td>Bi-mart</td>  <td >1</td>  <td>$36.99</td>  <td>$36.99</td> </tr> 
+<tr>  <td>Anti-Freeze</td>  <td>Bi-mart</td>  <td >1</td>  <td>$6.49</td>  <td>$6.49</td> </tr> 
+<tr>  <td>Standard Oil Filter</td>  <td>Bi-mart</td>  <td >1</td>  <td>$3.39</td>  <td>$3.39</td> </tr> 
+<tr>  <td>Mobil Morter Oil</td>  <td>Bi-mart</td>  <td >8</td>  <td>$1.19</td>  <td>$9.52</td> </tr> 
+<tr>  <td>Fuel Injector  Cleaner</td>  <td>Bi-mart</td>  <td >1</td>  <td>$0.99</td>  <td>$0.99</td> </tr> 
+<tr>  <td>Autolite  Platnum Spark Plugs</td>  <td>Bi-mart</td>  <td >1</td>  <td>$7.96</td>  <td>$7.96</td> </tr> 
+<tr>  <td>1/2&quot; Impact Wrench</td>  <td>Lowe's</td>  <td>1</td>  <td>$79.00</td>  <td>$79.00</td> </tr> 
+<tr>  <td></td>  <td></td>  <td></td>  <td>Grand<br>Total</td>  <td>$746.08</td>  </tr></table>	</td>	
+<td width=20></td>	
+<td width=800 align=left><font size=3>Well the project is done. As you can see by the tally sheet, the cost is much less than a shop would have done ($2000-$2500 for a rebuilt or $1500-$1800 for a used engine {same as what I got}). It is a great benefit to learn to do things your self. Now that I have the tools and the know-how, I could do the same project with less time and less money, if it was a similar Civic. Even on another car, I would have an idea of what to expect.<br><hr>
+
+civic06lg.jpg=Different views of the replacement engine. This engine is from Japan. It only has 35,000 miles on it and comes with a one-year warranty for $555.00. The head, block and internal parts are the same as the American version. But the intake, exhaust, distributor and some of the other parts hanging on the engine works only on Japanese cars and I will have to transfer some parts from the old engine to this newer engine.<br><br>
+civic04lg.jpg=Closeup of top-end inspection.<br><br>
+civic03lg.jpg=Looking in the oil pan you can see the missing parts broken in many parts.<br><br>
+civic02lg.jpg=Looking up under the engine, after removing the oil pan, I notice something is definitely wrong. On the left side, you can see the broken bracket and missing piston arm. The smooth surfaces of the camshaft that the piston arms rotate on are very rough and cracked. With the lack of oil circulation, the piston arm and camshaft over heated and with metal on metal contact without lubrication, this is what happens.<br><br>
+civic11lg.jpg=Look ma, no motor. Do you like my high-tech engine removal system?<br><br>
+civic05lg.jpg=Over all view of top-end inspection.<br><br>
+civic10lg.jpg=This is my messy work area.<br><br>
+civic01lg.jpg=After removing the head cover you can see everything covered by tar like oil. This shows that there was an over heating problem by a problem with the oil pump system or a lack of regular oil changes.<br><br>
+civic13lg.jpg=I got behind on updating this site. After I bought a 250 ft-lb impact wrench, I found it would not take off the crankshaft bold so I returned it and bought a 400 ft-lb impact wrench and it still did not work. By now I am frustrated and running out of ideas. I thought about finding an auto shop and pay them to do it but it is Saturday and most are close. I finally found one place that could do it but they closed in 30 minutes so I lifted the 150lb engine in my truck and raced it over. Without taking it out, they used their impact wrench and popped the thing off easily and did not charge me anything. My headache went away. Now I was able to move all the parts from the new engine to the old engine. There ended up being much more stuff then if first thought.<br><br>
+civic15lg.jpg=After sleeping in late because of staying up late yesterday I awoke very sore. I think I did too much for one day. Today, all I need to do is connect the hoses, wires and fill the transmission fluid, engine oil and coolant. I also put in new spark plugs. They were so warn down that they looked like the originals from '93. I decided to go with platinum plugs so there should be no worries for 4 or 5 years. The engine was complete and now it came to the moment of truth. Is I put the key in, I was a bit nervous because luck is never on my side. It fired up right away. I listen for a while and I sounds like a normal working engine. I put it in gear and drove it and it ran smooth. The car is basically done except I want to drive it a bit to circulate the oil and do one last oil change to remove any junk. Remember this engine came from Japan and I have no idea what they put in their cars and the engine could have been sitting in a warehouse for a year or so. Oil is cheap and it is the lifeblood of the car. I also have a concern with the cooling fan. I have not seen it run yet. I tested the fan itself by putting direct power to it and it worked fine. I do not know if the engine got hot enough so I will watch it tomorrow. If it still does not work I may have to replace the relay or sensor because I do not think there is a test for them.<br><br>
+</td>	</tr></table>
+
+
+
+
+
+								<hr></p>
+					
+			</div>
+				
+		</div>
+<div id="main">
+		<div id="scroller_container">
+			<img class="hide" id="left_arrow" src="../../res/left.png" alt="Scroll left" title="Scroll left" />					
+			<div id="image_scroller">
+				<ul id="thumbnails_container" class="thumbnails_unstyled">
+						<li class="active">
+										
+
+							<a href="slides/civic0.png" title="">
+										
+								<img src="thumbs/civic0.png" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:100;;height:75</span>
+						</li>
+						
+						<li class="">
+									
+
+							<a href="slides/civic00sm.jpg" title="1993 Honda Civic DX">
+										
+								<img src="thumbs/civic00sm.jpg" alt="1993 Honda Civic DX" title="1993 Honda Civic DX" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:175;;height:110</span>
+						</li>
+						
+						<li class="">
+									
+
+							<a href="slides/civic01lg.jpg" title="After removing the head cover you can see everything covered by tar like oil. This shows that there was an over heating problem by a problem with the oil pump system or a lack of regular oil changes.">
+										
+								<img src="thumbs/civic01lg.jpg" alt="After removing the head cover you can see everything covered by tar like oil. This shows that there was an over heating problem by a problem with the oil pump system or a lack of regular oil changes." title="After removing the head cover you can see everything covered by tar like oil. This shows that there was an over heating problem by a problem with the oil pump system or a lack of regular oil changes." style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:792;;height:594</span>
+						</li>
+						
+						<li class="">
+									
+
+							<a href="slides/civic02lg.jpg" title="Looking up under the engine, after removing the oil pan, I notice something is definitely wrong. On the left side, you can see the broken bracket and missing piston arm. The smooth surfaces of the camshaft that the piston arms rotate on are very rough and cracked. With the lack of oil circulation, the piston arm and camshaft over heated and with metal on metal contact without lubrication, this is what happens.">
+										
+								<img src="thumbs/civic02lg.jpg" alt="Looking up under the engine, after removing the oil pan, I notice something is definitely wrong. On the left side, you can see the broken bracket and missing piston arm. The smooth surfaces of the camshaft that the piston arms rotate on are very rough and cracked. With the lack of oil circulation, the piston arm and camshaft over heated and with metal on metal contact without lubrication, this is what happens." title="Looking up under the engine, after removing the oil pan, I notice something is definitely wrong. On the left side, you can see the broken bracket and missing piston arm. The smooth surfaces of the camshaft that the piston arms rotate on are very rough and cracked. With the lack of oil circulation, the piston arm and camshaft over heated and with metal on metal contact without lubrication, this is what happens." style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:792;;height:594</span>
+						</li>
+						
+						<li class="">
+									
+
+							<a href="slides/civic03lg.jpg" title="Looking in the oil pan you can see the missing parts broken in many parts.">
+										
+								<img src="thumbs/civic03lg.jpg" alt="Looking in the oil pan you can see the missing parts broken in many parts." title="Looking in the oil pan you can see the missing parts broken in many parts." style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:792;;height:586</span>
+						</li>
+						
+						<li class="">
+									
+
+							<a href="slides/civic04lg.jpg" title="Closeup of top-end inspection.">
+										
+								<img src="thumbs/civic04lg.jpg" alt="Closeup of top-end inspection." title="Closeup of top-end inspection." style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:792;;height:594</span>
+						</li>
+						
+						<li class="">
+									
+
+							<a href="slides/civic05lg.jpg" title="Over all view of top-end inspection.">
+										
+								<img src="thumbs/civic05lg.jpg" alt="Over all view of top-end inspection." title="Over all view of top-end inspection." style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:792;;height:594</span>
+						</li>
+						
+						<li class="">
+									
+
+							<a href="slides/civic06lg.jpg" title="Different views of the replacement engine. This engine is from Japan. It only has 35,000 miles on it and comes with a one-year warranty for $555.00. The head, block and internal parts are the same as the American version. But the intake, exhaust, distributor and some of the other parts hanging on the engine works only on Japanese cars and I will have to transfer some parts from the old engine to this newer engine.">
+										
+								<img src="thumbs/civic06lg.jpg" alt="Different views of the replacement engine. This engine is from Japan. It only has 35,000 miles on it and comes with a one-year warranty for $555.00. The head, block and internal parts are the same as the American version. But the intake, exhaust, distributor and some of the other parts hanging on the engine works only on Japanese cars and I will have to transfer some parts from the old engine to this newer engine." title="Different views of the replacement engine. This engine is from Japan. It only has 35,000 miles on it and comes with a one-year warranty for $555.00. The head, block and internal parts are the same as the American version. But the intake, exhaust, distributor and some of the other parts hanging on the engine works only on Japanese cars and I will have to transfer some parts from the old engine to this newer engine." style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:792;;height:614</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/civic07lg.jpg" title="">
+										
+								<img src="thumbs/civic07lg.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:792;;height:614</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/civic08lg.jpg" title="">
+										
+								<img src="thumbs/civic08lg.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:792;;height:613</span>
+						</li>
+						
+						<li class="">
+										
+
+							<a href="slides/civic09lg.jpg" title="">
+										
+								<img src="thumbs/civic09lg.jpg" alt="" title="" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:792;;height:614</span>
+						</li>
+						
+						<li class="">
+									
+
+							<a href="slides/civic10lg.jpg" title="This is my messy work area.">
+										
+								<img src="thumbs/civic10lg.jpg" alt="This is my messy work area." title="This is my messy work area." style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:792;;height:594</span>
+						</li>
+						
+						<li class="">
+									
+
+							<a href="slides/civic11lg.jpg" title="Look ma, no motor. Do you like my high-tech engine removal system?">
+										
+								<img src="thumbs/civic11lg.jpg" alt="Look ma, no motor. Do you like my high-tech engine removal system?" title="Look ma, no motor. Do you like my high-tech engine removal system?" style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:792;;height:594</span>
+						</li>
+						
+						<li class="">
+									
+
+							<a href="slides/civic12lg.jpg" title="Well, I have broken two sockets trying to take this bolt off the crankshaft pulley. I just bought an impact wrench and I will need to get a new socket tomorrow.">
+										
+								<img src="thumbs/civic12lg.jpg" alt="Well, I have broken two sockets trying to take this bolt off the crankshaft pulley. I just bought an impact wrench and I will need to get a new socket tomorrow." title="Well, I have broken two sockets trying to take this bolt off the crankshaft pulley. I just bought an impact wrench and I will need to get a new socket tomorrow." style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:792;;height:594</span>
+						</li>
+						
+						<li class="">
+									
+
+							<a href="slides/civic13lg.jpg" title="I got behind on updating this site. After I bought a 250 ft-lb impact wrench, I found it would not take off the crankshaft bold so I returned it and bought a 400 ft-lb impact wrench and it still did not work. By now I am frustrated and running out of ideas. I thought about finding an auto shop and pay them to do it but it is Saturday and most are close. I finally found one place that could do it but they closed in 30 minutes so I lifted the 150lb engine in my truck and raced it over. Without taking it out, they used their impact wrench and popped the thing off easily and did not charge me anything. My headache went away. Now I was able to move all the parts from the new engine to the old engine. There ended up being much more stuff then if first thought.">
+										
+								<img src="thumbs/civic13lg.jpg" alt="I got behind on updating this site. After I bought a 250 ft-lb impact wrench, I found it would not take off the crankshaft bold so I returned it and bought a 400 ft-lb impact wrench and it still did not work. By now I am frustrated and running out of ideas. I thought about finding an auto shop and pay them to do it but it is Saturday and most are close. I finally found one place that could do it but they closed in 30 minutes so I lifted the 150lb engine in my truck and raced it over. Without taking it out, they used their impact wrench and popped the thing off easily and did not charge me anything. My headache went away. Now I was able to move all the parts from the new engine to the old engine. There ended up being much more stuff then if first thought." title="I got behind on updating this site. After I bought a 250 ft-lb impact wrench, I found it would not take off the crankshaft bold so I returned it and bought a 400 ft-lb impact wrench and it still did not work. By now I am frustrated and running out of ideas. I thought about finding an auto shop and pay them to do it but it is Saturday and most are close. I finally found one place that could do it but they closed in 30 minutes so I lifted the 150lb engine in my truck and raced it over. Without taking it out, they used their impact wrench and popped the thing off easily and did not charge me anything. My headache went away. Now I was able to move all the parts from the new engine to the old engine. There ended up being much more stuff then if first thought." style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:792;;height:594</span>
+						</li>
+						
+						<li class="">
+									
+
+							<a href="slides/civic14lg.jpg" title="As you can see I had to lift the car 2 1/2 feet to clear the engine that needs to be installed from below. As 3am Sunday rolled around, I just finished inserting the engine.">
+										
+								<img src="thumbs/civic14lg.jpg" alt="As you can see I had to lift the car 2 1/2 feet to clear the engine that needs to be installed from below. As 3am Sunday rolled around, I just finished inserting the engine." title="As you can see I had to lift the car 2 1/2 feet to clear the engine that needs to be installed from below. As 3am Sunday rolled around, I just finished inserting the engine." style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:792;;height:594</span>
+						</li>
+						
+						<li class="">
+									
+
+							<a href="slides/civic15lg.jpg" title="After sleeping in late because of staying up late yesterday I awoke very sore. I think I did too much for one day. Today, all I need to do is connect the hoses, wires and fill the transmission fluid, engine oil and coolant. I also put in new spark plugs. They were so warn down that they looked like the originals from '93. I decided to go with platinum plugs so there should be no worries for 4 or 5 years. The engine was complete and now it came to the moment of truth. Is I put the key in, I was a bit nervous because luck is never on my side. It fired up right away. I listen for a while and I sounds like a normal working engine. I put it in gear and drove it and it ran smooth. The car is basically done except I want to drive it a bit to circulate the oil and do one last oil change to remove any junk. Remember this engine came from Japan and I have no idea what they put in their cars and the engine could have been sitting in a warehouse for a year or so. Oil is cheap and it is the lifeblood of the car. I also have a concern with the cooling fan. I have not seen it run yet. I tested the fan itself by putting direct power to it and it worked fine. I do not know if the engine got hot enough so I will watch it tomorrow. If it still does not work I may have to replace the relay or sensor because I do not think there is a test for them.">
+										
+								<img src="thumbs/civic15lg.jpg" alt="After sleeping in late because of staying up late yesterday I awoke very sore. I think I did too much for one day. Today, all I need to do is connect the hoses, wires and fill the transmission fluid, engine oil and coolant. I also put in new spark plugs. They were so warn down that they looked like the originals from '93. I decided to go with platinum plugs so there should be no worries for 4 or 5 years. The engine was complete and now it came to the moment of truth. Is I put the key in, I was a bit nervous because luck is never on my side. It fired up right away. I listen for a while and I sounds like a normal working engine. I put it in gear and drove it and it ran smooth. The car is basically done except I want to drive it a bit to circulate the oil and do one last oil change to remove any junk. Remember this engine came from Japan and I have no idea what they put in their cars and the engine could have been sitting in a warehouse for a year or so. Oil is cheap and it is the lifeblood of the car. I also have a concern with the cooling fan. I have not seen it run yet. I tested the fan itself by putting direct power to it and it worked fine. I do not know if the engine got hot enough so I will watch it tomorrow. If it still does not work I may have to replace the relay or sensor because I do not think there is a test for them." title="After sleeping in late because of staying up late yesterday I awoke very sore. I think I did too much for one day. Today, all I need to do is connect the hoses, wires and fill the transmission fluid, engine oil and coolant. I also put in new spark plugs. They were so warn down that they looked like the originals from '93. I decided to go with platinum plugs so there should be no worries for 4 or 5 years. The engine was complete and now it came to the moment of truth. Is I put the key in, I was a bit nervous because luck is never on my side. It fired up right away. I listen for a while and I sounds like a normal working engine. I put it in gear and drove it and it ran smooth. The car is basically done except I want to drive it a bit to circulate the oil and do one last oil change to remove any junk. Remember this engine came from Japan and I have no idea what they put in their cars and the engine could have been sitting in a warehouse for a year or so. Oil is cheap and it is the lifeblood of the car. I also have a concern with the cooling fan. I have not seen it run yet. I tested the fan itself by putting direct power to it and it worked fine. I do not know if the engine got hot enough so I will watch it tomorrow. If it still does not work I may have to replace the relay or sensor because I do not think there is a test for them." style="width: 124px; height: 124px;" />
+							</a>
+							<span>width:792;;height:594</span>
+						</li>
+						
+				</ul>
+				<div class="clear"></div>
+			</div>					
+			<img class="hide" id="right_arrow" src="../../res/right.png" alt="Scroll right" title="Scroll right" />
+			
+			<div class="clear"></div>
+		</div>
+		<div class="clear"></div>
+		<div id="middle_container">
+			<div id="main_image"></div>
+			<div id="extras"></div>
+		</div>
+	<div class="clear"></div>	
+</div>
+<div class="clear"></div>
+		<div id="footer">
+				<p id="bottom_container">
+					<a href="http://jalbum.net" target="_blank" title="jAlbum 11">Create online photo albums with jAlbum</a> and <a href="http://jalbum.net/skins/skin/Galleria" title="Galleria">Galleria</a>.
+				</p>
+		</div>
+		
+		
+		
+	<!--</body><div id="jalbumwidgetcontainer"></div>
+<script type="text/javascript"><!--//--><![CDATA[//><!--
+_jaSkin = "Galleria";
+_jaStyle = "Dark.css";
+_jaVersion = "11.6.14";
+_jaGeneratorType = "desktop";
+_jaLanguage = "en";
+_jaPageType = "index";
+_jaRootPath = "../..";
+_jaGuid = "1393484912880";
+var script = document.createElement("script");
+script.type = "text/javascript";
+script.src = "http://jalbum.net/widgetapi/load.js";
+document.getElementById("jalbumwidgetcontainer").appendChild(script);
+//--><!]]></script>
+
+</body>
+</html>
+

@@ -1,0 +1,30 @@
+BODY {
+	MARGIN-LEFT: 18%; COLOR: brown; MARGIN-RIGHT: 20%; BACKGROUND-COLOR: white
+}
+P {
+	FONT-SIZE: 11pt; LINE-HEIGHT: 15pt; FONT-FAMILY: Arial, San-Serif
+}
+.note {
+	FONT-SIZE: 8pt
+}
+H2 {
+	COLOR: red; FONT-FAMILY: Arial, San-Serif
+}
+H3 {
+	COLOR: red; FONT-FAMILY: Arial, San-Serif
+}
+A:link {
+	COLOR: blue; TEXT-DECORATION: none
+}
+A:visited {
+	COLOR: blue; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: blue; BACKGROUND-COLOR: yellow
+}
+BLOCKQUOTE {
+	FONT-WEIGHT: bold; FONT-STYLE: italic
+}
+UL {
+	FONT-FAMILY: arial, sans-serif
+}
