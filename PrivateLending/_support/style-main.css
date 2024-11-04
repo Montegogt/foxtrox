@@ -1,15 +1,14 @@
-
 * {box-sizing: border-box}
-body {font-family: Arial, Helvetica, sans-serif; color: white; background-color: #222222; margin:0; padding:0}
-.navbar {width: 100%; background-color: #333333; overflow: auto;}
+body {font-family: Arial, Helvetica, sans-serif; font-size: 20px; color: white; background-color: #222222; margin:0; padding:0; text-align: center;}
+
+.navbar {width: 100%; background-color: #444444; overflow: auto;}
 .navbar a {float: left; padding: 5px; color: white; text-decoration: none; font-size: 20px; width: 25%; /* Five links of equal widths */ text-align: center;}
-.navbar a:hover, a.active {background-color: #000000;}
-.navbar2 {width: 100%; background-color: #999999; overflow: auto;}
-.navbar2 a {float: left; padding: 5px; color: white; text-decoration: none; font-size: 20px; width: 33%; /* Five links of equal widths */ text-align: center;}
-.navbar2 a:hover, a.active {background-color: #666666;}
+.navbar a:hover, a.active {background-color: #111111;}
+.navbar2 {width: 100%; background-color: #555555; overflow: auto;}
+.navbar2 a {float: left; padding: 5px; color: white; text-decoration: none; font-size: 20px; text-align: center;}
+.navbar2 a:hover, a.active {background-color: #222222;}
 @media screen and (max-width: 600px) {.navbar a {float: none; display: block; width: 100%; text-align: left;}}
 .sticky {background-color: #333333; font-size: 20px; font-weight: bold; color:#EBB631; position: -webkit-sticky; position: sticky; top: 0;}
-
 
 a {font-size: 20px; font-weight: bold; color:#EBB631; text-decoration: none;}
 
