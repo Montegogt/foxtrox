@@ -8,7 +8,7 @@
 <!--___________________-->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-.collapsible {
+.collapsible2 {
   background-color: #777;
   color: white;
   cursor: pointer;
@@ -21,11 +21,11 @@
   font-weight: bold;
 }
 
-.active, .collapsible:hover {
+.active2, .collapsible2:hover {
   background-color: #555;
 }
 
-.collapsible:after {
+.collapsible2:after {
   content: '\002B';
   color: white;
   font-weight: bold;
@@ -33,11 +33,11 @@
   margin-left: 5px;
 }
 
-.active:after {
+.active2:after {
   content: "\2212";
 }
 
-.content {
+.content2 {
   padding: 0 15px;
   max-height: 0;
   overflow: hidden;
@@ -48,12 +48,12 @@
 
 
 <script>
-var coll = document.getElementsByClassName("collapsible");
+var coll = document.getElementsByClassName("collapsible2");
 var i;
 
 for (i = 0; i < coll.length; i++) {
   coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
+    this.classList.toggle("active2");
     var content = this.nextElementSibling;
     if (content.style.maxHeight){
       content.style.maxHeight = null;
@@ -110,8 +110,8 @@ for (i = 0; i < coll.length; i++) {
         Loan to value qualifications: 70% <br>
         <br>
         <font size=2>* Rates and terms are subject to change.</font><br>
-    <button class="collapsible">Example</button>
-     <div class="content">
+    <button class="collapsible2">Example</button>
+     <div class="content2">
        <p>
         <table style="padding: 15px; background-color: #666666;"><tr><td width=500px style="padding: 10px;">
         $100,000 loan for 3 years =<br>
@@ -122,8 +122,8 @@ for (i = 0; i < coll.length; i++) {
         </td></tr></table>
        </p>
      </div>
-    <button class="collapsible">Details</button>
-     <div class="content">
+    <button class="collapsible2">Details</button>
+     <div class="content2">
        <p>
         <table style="padding: 15px; background-color: #666666;"><tr><td width=100% style="padding: 10px;">
         Loan Closing: 5-10 Business Days<br>
@@ -134,8 +134,8 @@ for (i = 0; i < coll.length; i++) {
         </td></tr></table>
        </p>
      </div>
-    <button class="collapsible">Fees</button>
-     <div class="content">
+    <button class="collapsible2">Fees</button>
+     <div class="content2">
        <p>
         <table style="padding: 15px; background-color: #666666;"><tr><td width=500xp style="padding: 10px;">
         <ul>
