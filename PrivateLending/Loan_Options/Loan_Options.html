@@ -1,6 +1,81 @@
 <base href="../">
 <link rel="stylesheet" id="style-css" href="_support/style-main.css" type="text/css" media="all">
 
+
+
+
+
+<!--___________________-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 5px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
+</style>
+
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+<!--___________________-->
+
+
+
+
+
+
+
+
+
+
+
+
 <hr>
 <img SRC="_support/img/2003.jpg" style="width:100%; height:50px;" id="image" alt="Loan Options">
 <hr>
@@ -26,29 +101,68 @@
   <table width=98% style="background-color: #999999; padding: 15px;"><tr>
     <td style="background-color: #666666; background-image: url('https://foxtrox.com/PrivateLending/_support/img/10004b.jpg'); background-size:100% auto; margin:0px;" align="left">
       <table style="padding: 15px; background-color: #666666;" border=1><tr><td style="padding: 10px">
-        <b><font size=6>Interest Only loans*</font><br>(Interest only)</b><br>
+        <b><font size=6>Interest Only loan *</font><br>(Interest only)</b><br>
         <br>
-        Loan Maturity: 1 to 12 years<br>
-        Annual Interest Rate: 15%<br>
         Loan Amount Range: $50,000 up to $300,000<br>
+        Annual Interest Rate: 15%<br>
+        Loan Maturity: 1 to 12 years<br>
         Monthly Payment: Interest Only<br>
         Loan to value qualifications: 70% <br>
+        <br>
+        * Rates and terms are subject to change.
+    <button class="collapsible">Example</button>
+     <div class="content">
+       <p>
+        <table style="padding: 15px; background-color: #666666;"><tr><td width=100% style="padding: 10px;">
+        $100,000 loan for 3 years =<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;<b>$1,250 per month</b> (interest only)<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;After 3 years, full balance of $100,000 is due.<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;Estimated fees***: $2000+$500+$450 = $2,950<br>
+        <img SRC="_support/img/1004.jpg" style="width:100%;" id="image" alt="Cash-Out Refinance Loans">
+        </td></tr></table>
+       </p>
+     </div>
+    <button class="collapsible">Details</button>
+     <div class="content">
+       <p>
+        <table style="padding: 15px; background-color: #666666;"><tr><td width=100% style="padding: 10px;">
         Loan Closing: 5-10 Business Days<br>
         Loan Secured: Mortgage or deed filed with title company.<br>
         No minimum FICO required.<br>
         No bank statements required.<br>
         No tax return required.<br>
-        <br>
-        <b><font size=4>Example: </font></b><br>
-        $100,000 loan for 3 years =<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;<b>$1,250 per month</b> (interest only)<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;After 3 years, full balance of $100,000 is due.<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;Estimated fees***: $2000+$500+$450 = $2,950<br>
+        </td></tr></table>
+       </p>
+     </div>
+    <button class="collapsible">Fees</button>
+     <div class="content">
+       <p>
+        <table style="padding: 15px; background-color: #666666;"><tr><td width=50% style="padding: 10px;">
+        <ul>
+        <li>Origination Fee: 2 Points (min. $1,000)</li>
+            <li>Document Fee: $500</li>
+            <li>Property Appraisal: None if estimate LTV is under 50%, otherwise $350 + .1 Points</li>
+            <li>Closing Costs: Paid by Borrower</li>
+            <li>Underwriting Fee: None</li>
+            <li>Pre-Payment Penalty: $10% of remaining loan term.</li>
+            <li>Extension Fee: $200 on good standing loans.</li>
+            <li>Late payment Fee: $50 + .1 Points per instance.</li>
+            <li>Fees can be rolled into total loan amount if total is still under the required LTV.</li>
+            <li>Property Insurance: The Borrower is required to secure proper insurance against fire, damage, or injury. Depending on the loan terms, the Borrower may be required to provide funds to the Lender to pay the insurer directly. <br>
+            <li>Legal fees: The borrower will pay any legal fees that that involve failure of fulfilling the terms of the loan contracts.</li>
+          </ul>
+        </td></tr></table>
+       </p>
+     </div>
+
       </td></tr></table>
      </td>
     </tr>
   </table> 
 </div>
+
+
+
  
  <br>
  
