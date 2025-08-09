@@ -50,10 +50,10 @@ A.offnavsm:hover { color: #55ff55; TEXT-DECORATION: underline}
 a:hover {color:#00ffff;}
 
 a:link {
-   color: #00f;
+   color: #f00;
 }
 a:visited {
-   color: #55f;
+   color: #f00;
 }
 
 
