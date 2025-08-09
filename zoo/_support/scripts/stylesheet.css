@@ -9,8 +9,8 @@ body {
   /*stuff that goes on all pages*/
 	margin: 0;
 	padding: 0;
-	color: #000;
-	background-color: #333;
+	color: #fff;
+	background-color: #000;
 	background-attachment:fixed;
 	font-family: Arial, Helvetica, sans-serif;
 }
@@ -50,10 +50,10 @@ A.offnavsm:hover { color: #55ff55; TEXT-DECORATION: underline}
 a:hover {color:#00ffff;}
 
 a:link {
-   color: #0ff;
+   color: #fff;
 }
 a:visited {
-   color: #5ff;
+   color: #fff;
 }
 
 
@@ -61,9 +61,9 @@ h1 {
 	font-family: Helvetica, Geneva, Arial, sans-serif;
 	font-style: italic;
 	font-weight: bold;
-	color: #5ff;
+	color: #fff;
 	background-color: #555;
-	font-size: 30px;
+	font-size: 22px;
 	font-variant: caps;
 	text-align: center;
 	text-transform: uppercase;
@@ -83,3 +83,8 @@ h2 {
 	margin: 10;
 }
 
+address {
+    margin-top: 1em;
+    padding-top: 1em;
+    border-top: thin dotted;
+}
