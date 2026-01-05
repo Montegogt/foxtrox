@@ -1,0 +1,29 @@
+<html>
+<head>
+<TITLE>Tire Change Help</TITLE>
+<link rel="stylesheet" href="../stylesheet.css" type="text/css">
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" text="#000000" link="#ff0000" vlink="#ff0000">
+<center>
+<table cellspacing="0" cellpadding="4" border="2">
+<tr><td colspan="3" align="CENTER">These calculators are color coded by function</td></tr>
+<tr>
+	<td bgcolor="#0000ff"><font color="#ffffff">All Blanks Required</td>
+	<td bgcolor="#ff00ff"><font color="#ffffff">Output Only</td>
+</tr>
+</table>
+
+<font size="+1"><b>TIRE SIZE CHANGE CALCULATOR</b></font><p>
+<b>This calc can be used to find a new gear ratio.</b><p> 
+</center>
+Bigger tires are more functional, look better, and rob you of power.  One way to compensate for this is to swap out your differential gears.  The left side of the calculator requires all three entries.  The right side will show the results.  The <i>New Ratio</i> box will show the ideal gear ratio (getting as close to stock as possible).  If you want a bit more power, for rock crawling, go with something closer to the <i>Lo Ratio</i> number.  Also, the <i>Actual Ratio</i> box shows your adjusted gear ratio if you choose to keep your original gears.
+<p>
+<center>
+<b>Formula used</b><p>
+<img src="geartire-formula.gif" width=388 height=44 border=0>
+
+</center>
+
+</body>
+</html>

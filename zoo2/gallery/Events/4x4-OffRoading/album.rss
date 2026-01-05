@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0"
+     xmlns:media="http://search.yahoo.com/mrss/"
+     xmlns:jalbum="http://jalbum.net/jalbumrss">
+    <channel>
+        <title>4x4-OffRoading</title>
+   	<link>../..</link>
+        <generator>jAlbum 11</generator>
+   		<description></description>
+        <jalbum:absolutePath></jalbum:absolutePath>
+    	<jalbum:link rel="sub" href="4x4-2001dec/album.rss" />   	
+    	<jalbum:link rel="sub" href="4x4-2001nov/album.rss" />   	
+    	<jalbum:link rel="sub" href="4x4-2001sep/album.rss" />   	
+    	<jalbum:link rel="sub" href="4x4-2002apr/album.rss" />   	
+    	<jalbum:link rel="sub" href="4x4-2002jun/album.rss" />   	
+    	<jalbum:link rel="sub" href="4x4-2002mar/album.rss" />   	
+    	<jalbum:link rel="sub" href="4x4-2002may/album.rss" />   	
+    	<jalbum:link rel="sub" href="4x4-2002oct-Washougal/album.rss" />   	
+    	<jalbum:link rel="sub" href="4x4-2002sep-Tillamook/album.rss" />   	
+    	<jalbum:link rel="sub" href="4x4-2002sep-YaleLake/album.rss" />   	
+    	<jalbum:link rel="sub" href="4x4-2003jul-BrownsCamp/album.rss" />   	
+    	<jalbum:link rel="sub" href="4x4-2003mar-BrownsCamp/album.rss" />   	
+    	<jalbum:link rel="sub" href="4x4-2003may/album.rss" />   	
+    	<jalbum:link rel="sub" href="4x4-2010feb-tillamook state forest/album.rss" />   	
+    	<jalbum:link rel="sub" href="_MemberPics/album.rss" />   	
+        
+    </channel>
+</rss>

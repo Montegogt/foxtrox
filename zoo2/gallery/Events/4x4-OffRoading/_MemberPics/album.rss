@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0"
+     xmlns:media="http://search.yahoo.com/mrss/"
+     xmlns:jalbum="http://jalbum.net/jalbumrss">
+    <channel>
+        <title>_MemberPics</title>
+   	<link>../../..</link>
+        <generator>jAlbum 11</generator>
+   		<description></description>
+        <jalbum:absolutePath></jalbum:absolutePath>
+    	<jalbum:link rel="sub" href="eddie/album.rss" />   	
+    	<jalbum:link rel="sub" href="joel/album.rss" />   	
+    	<jalbum:link rel="sub" href="joseph/album.rss" />   	
+    	<jalbum:link rel="sub" href="karl/album.rss" />   	
+    	<jalbum:link rel="sub" href="Shannon1/album.rss" />   	
+    	<jalbum:link rel="sub" href="Shannon2/album.rss" />   	
+        
+    </channel>
+</rss>
